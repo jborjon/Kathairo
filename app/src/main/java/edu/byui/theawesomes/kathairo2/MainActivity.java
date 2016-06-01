@@ -13,6 +13,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clicky() {
-        TextView textView = (TextView) findViewById(R.id.class);
+        TextView textView = (TextView) findViewById(R.id.class);    // I hate this (they made me say it)
     }
 }
