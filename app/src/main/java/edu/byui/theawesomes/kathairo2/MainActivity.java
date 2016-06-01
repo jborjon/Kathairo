@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    //hi!
+    //Bye
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
