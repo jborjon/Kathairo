@@ -7,18 +7,18 @@ import android.test.ApplicationTestCase;
  * Created by Jordan on 6/8/16.
  *
  */
-public class ClueSolver extends ApplicationTestCase<Application> {
+public class ClueSolverTest extends ApplicationTestCase<Application> {
 
 
     private String name;
     //private timeCompleted Date;
 
-    public ClueSolver(){
+    public ClueSolverTest(){
         super(Application.class);
     }
-   public void getTimeCompleted() {
+    public void getTimeCompleted() {
 
-   }
+    }
     public void Operation1() {
 
     }

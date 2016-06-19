@@ -7,9 +7,9 @@ import android.test.ApplicationTestCase;
  * Created by Jordan on 6/8/16.
  *
  */
-public class CrosswordFrame extends ApplicationTestCase<Application> {
+public class CrosswordFrameTest extends ApplicationTestCase<Application> {
 
-    public CrosswordFrame(){
+    public CrosswordFrameTest(){
         super(Application.class);
         //do stuff
 
@@ -22,8 +22,8 @@ public class CrosswordFrame extends ApplicationTestCase<Application> {
     public JButton saveButton;
     public JButton loadButton;
     public JScrollPane solvedLogPane;
-    public JScrollPane downListPane; 
-    public JScrollPane acrossListPane; 
+    public JScrollPane downListPane;
+    public JScrollPane acrossListPane;
     public SolvedLog solvedLog;
     public JList downList;
     public JList acrossList;
