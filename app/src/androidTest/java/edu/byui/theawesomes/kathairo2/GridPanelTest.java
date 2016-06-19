@@ -14,7 +14,7 @@ public class GridPanelTest extends ApplicationTestCase<Application> {
 
 
     private int width;
-    private int height;
+    //private int height;
     //private Crossword crossword;
     //private CharacterCell focus;
     private ArrayList list;
