@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author      Firstname Lastname <address @ example.com>
+ * @author      Felipe Chora
  * @version     1.6                 (current version number of program)
  * @since       1.2          (the version of the package this class was first added to)
  */
@@ -34,7 +34,9 @@ public class CrossWord {
     }
 
     /****************************************************
+     * Returns all the words in the crossword puzzle.
      *
+     * @return A list of all the words in the crossword puzzle
      *
      *****************************************************/
     public List<Word> getCrosswordList(){
