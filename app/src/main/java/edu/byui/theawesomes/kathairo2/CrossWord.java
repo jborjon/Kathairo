@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by fmcho on 6/29/2016.
+ * @author      Firstname Lastname <address @ example.com>
+ * @version     1.6                 (current version number of program)
+ * @since       1.2          (the version of the package this class was first added to)
  */
 public class CrossWord {
     /**
@@ -30,6 +32,7 @@ public class CrossWord {
         crossword.add(toAdd);
 
     }
+
     /****************************************************
      *
      *
