@@ -6,14 +6,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by fmcho on 6/29/2016.
+ * @author      Joseph Borjon
+ * @version     1.6                 (current version number of program)
+ * @since       1.2          (the version of the package this class was first added to)
  */
 public class Word {
 
+    /*
+     *
+     */
     private List<CharacterCell> word = new ArrayList<CharacterCell>();
+    /*
+     *
+     */
     private int numberCharactersInTheWord;
+    /*
+     *
+     */
     private int numberOfTheWord = 0;
 
+    /****************************************************
+     *This sets the word
+     * <p>
+     *     This uses a loop to be able to set the words
+     *     properly.
+     * </p>
+     *
+     * @param String wordToSet
+     * @return nothing
+     *****************************************************/
     public void setWord(String wordToSet){
 
         for(int i = 0; i < wordToSet.length(); i++){
@@ -26,6 +47,16 @@ public class Word {
         Log.i("setWord","Word set");
     }
 
+    /****************************************************
+     *This get's the word
+     * <p>
+     *  This gets the word for the user to use
+     *
+     * </p>
+     *
+     * @param none
+     * @return String completeWord
+     *****************************************************/
     public String getWord(){
         String completeWord = "";
         for (int i = 0; i < word.size(); i++) {
@@ -37,14 +68,29 @@ public class Word {
         return completeWord;
     }
 
+    /****************************************************
+     * Gets the number of characters in a word.
+     * @param nothing
+     * @return int numberCharactersInTheWord
+     *****************************************************/
     public int getNumberOfCharactersInTheWord(){
         return numberCharactersInTheWord;
     }
 
+    /****************************************************
+     * This sets the number of words.
+     * @param index
+     * @return void
+     *****************************************************/
     public void setNumberOfTheWord(int index){
         numberOfTheWord = index;
     }
 
+    /****************************************************
+     * Gets the number of the word
+     * @param Nothing
+     * @return int numberOfTheWord
+     *****************************************************/
     public int getNumberOfTheWord(){
         return numberOfTheWord;
     }
