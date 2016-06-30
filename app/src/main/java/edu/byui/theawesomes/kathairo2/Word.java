@@ -10,10 +10,23 @@ import java.util.List;
  */
 public class Word {
 
+    /*
+
+     */
     private List<CharacterCell> word = new ArrayList<CharacterCell>();
+    /*
+
+     */
     private int numberCharactersInTheWord;
+    /*
+
+     */
     private int numberOfTheWord = 0;
 
+    /****************************************************
+     *
+     *
+     *****************************************************/
     public void setWord(String wordToSet){
 
         for(int i = 0; i < wordToSet.length(); i++){
@@ -26,6 +39,10 @@ public class Word {
         Log.i("setWord","Word set");
     }
 
+    /****************************************************
+     *
+     *
+     *****************************************************/
     public String getWord(){
         String completeWord = "";
         for (int i = 0; i < word.size(); i++) {
@@ -37,14 +54,26 @@ public class Word {
         return completeWord;
     }
 
+    /****************************************************
+     *
+     *
+     *****************************************************/
     public int getNumberOfCharactersInTheWord(){
         return numberCharactersInTheWord;
     }
 
+    /****************************************************
+     *
+     *
+     *****************************************************/
     public void setNumberOfTheWord(int index){
         numberOfTheWord = index;
     }
 
+    /****************************************************
+     *
+     *
+     *****************************************************/
     public int getNumberOfTheWord(){
         return numberOfTheWord;
     }
