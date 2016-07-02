@@ -12,4 +12,10 @@
     tools:context="edu.byui.theawesomes.kathairo2.cluesActivity"
     tools:showIn="@layout/activity_clues">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cluesList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
