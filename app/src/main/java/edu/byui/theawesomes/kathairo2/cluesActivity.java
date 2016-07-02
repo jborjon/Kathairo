@@ -55,22 +55,45 @@ public class cluesActivity extends AppCompatActivity {
     protected void displayClues() {
 
         // Bogus data!
-        ArrayList<String> bogusData = new ArrayList<String>();
+        ArrayList<String> bogusDownData = new ArrayList<String>();
+        ArrayList<String> bogusAcrossData = new ArrayList<String>();
+
+CrossWord crossWord = new CrossWord();
+        crossWord.addWord("hello",1);
+        crossWord.getCrosswordList();
 
         // Get the appropriate text field
         TextView cluesTextField = (TextView) findViewById(R.id.cluesList);
 
         // DELETE the following, it's just for testing
-        bogusData.add("My");
-        bogusData.add("name");
-        bogusData.add("is");
-        bogusData.add("Inigo");
-        bogusData.add("Montoya");
+        bogusDownData.add("You need to start learning to dance before your _______  in order to learn to dance. (5 letters)");
+        bogusDownData.add("name");
+        bogusDownData.add("is");
+        bogusDownData.add("Inigo");
+        bogusDownData.add("Montoya");
 
-        // Put the clues on the screen
-        for (int i = 0; i < bogusData.size(); ++i) {
+        bogusAcrossData.add("In the 1600s dancing was very prevalent. Today, dancing is done ______");
+        bogusAcrossData.add("prepare");
+        bogusAcrossData.add("to");
+        bogusAcrossData.add("die");
+
+
+        // Put the down clues on the screen
+        cluesTextField.append("Down:" + "\n");
+        for (int i = 0; i < bogusDownData.size(); ++i) {
+            //we will have to access the clue number later... once we have it
             // Add a list number, starting with 1, followed by the clue
-            cluesTextField.append(Integer.toString(i + 1) + ". " + bogusData.get(i) + "\n");
+            cluesTextField.append(Integer.toString(i + 1) + ". " + bogusDownData.get(i) + "\n");
+        }
+
+        cluesTextField.append("\n");
+
+        // Put the across clues on the screen
+        cluesTextField.append("\nAcross:" + "\n");
+        for (int i = 0; i < bogusAcrossData.size(); ++i) {
+            //we will have to access the clue number later... once we have it
+            // Add a list number, starting with 1, followed by the clue
+            cluesTextField.append(Integer.toString(i + 1) + ". " + bogusAcrossData.get(i) + "\n");
         }
     }
 }
