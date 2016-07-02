@@ -1,5 +1,6 @@
 package edu.byui.theawesomes.kathairo2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -25,6 +26,22 @@ public class crossWordActivity extends AppCompatActivity {
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+    public void mainMenuOnClick(View v){
+        Intent i = new Intent(this, mainScreen.class);
+        //i.putExtras(bundle);
+        startActivity(i);
+    }
+    public void newGameOnClick(View v){
+        Intent i = new Intent(this, crossWordActivity.class);
+        //i.putExtras(bundle);
+        startActivity(i);
+    }
+
+    public void cluesOnClick(View v){
+        Intent i = new Intent(this, cluesActivity.class);
+        //i.putExtras(bundle);
+        startActivity(i);
     }
 
 }
