@@ -16,9 +16,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Kathario..."
+        android:text="Kathario"
         android:id="@+id/textView3"
+        android:layout_marginTop="16dp"
+        android:textSize="75dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp" />
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Version: 0.5"
+        android:id="@+id/versionId"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="38dp"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Created By: Felipe Ch, Jordan Charles, Joseph Borjon"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/versionId"
+        android:layout_alignLeft="@+id/versionId"
+        android:layout_alignStart="@+id/versionId"
+        android:layout_marginTop="19dp"
+        android:textSize="25dp" />
+
 </RelativeLayout>
