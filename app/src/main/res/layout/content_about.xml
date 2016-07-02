@@ -47,4 +47,36 @@
         android:layout_marginTop="19dp"
         android:textSize="25dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/menuBtn"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginRight="0dp"
+        android:onClick="mainMenuOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puzzle"
+        android:id="@+id/puzzleBtn"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="440dp"
+        android:onClick="newGameOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clues"
+        android:id="@+id/cluesId"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="440dp"
+        android:onClick="cluesOnClick" />
+
 </RelativeLayout>

@@ -12,4 +12,31 @@
     tools:context="edu.byui.theawesomes.kathairo2.crossWordActivity"
     tools:showIn="@layout/activity_cross_word">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puzzle"
+        android:id="@+id/button2"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="440dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/button3"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="440dp"
+        android:onClick="mainMenuOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clues"
+        android:id="@+id/button"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="440dp"
+        android:onClick="cluesOnClick" />
 </RelativeLayout>

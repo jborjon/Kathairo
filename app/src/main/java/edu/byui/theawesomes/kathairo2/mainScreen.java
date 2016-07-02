@@ -3,7 +3,6 @@ package edu.byui.theawesomes.kathairo2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -17,9 +16,7 @@ public class mainScreen extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-
-    }
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);}
 
     public void newGameOnClick(View v){
         Intent i = new Intent(this, crossWordActivity.class);
@@ -31,4 +28,14 @@ public class mainScreen extends AppCompatActivity {
         Intent i = new Intent(this, aboutActivity.class);
         startActivity(i);
     }
+
+    public void cluesOnClick(View v){
+        Intent i = new Intent(this, cluesActivity.class);
+        //i.putExtras(bundle);
+        startActivity(i);
+    }
+
+
+
+
 }
