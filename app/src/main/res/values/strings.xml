@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Kathairo2</string>
+    <string name="title_activity_main_screen">mainScreen</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_crossword_puzzle">crosswordPuzzle</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_cross_word">crossWordActivity</string>
+    <string name="title_activity_clues">cluesActivity</string>
 </resources>

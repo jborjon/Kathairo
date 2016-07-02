@@ -7,6 +7,44 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"></application>
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".mainScreen"
+            android:label="Kathairo"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".crossWordActivity"
+            android:label="@string/title_activity_cross_word"
+            android:parentActivityName=".mainScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.byui.theawesomes.kathairo2.mainScreen" />
+        </activity>
+        <activity
+            android:name=".cluesActivity"
+            android:label="@string/title_activity_clues"
+            android:parentActivityName=".crossWordActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.byui.theawesomes.kathairo2.crossWordActivity" />
+        </activity>
+        <activity
+            android:name=".aboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".mainScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.byui.theawesomes.kathairo2.mainScreen" />
+        </activity>
+    </application>
 
 </manifest>
