@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".mainScreen"
-            android:label="@string/title_activity_main_screen"
+            android:label="Kathairo"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
