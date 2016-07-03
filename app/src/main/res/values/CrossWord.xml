@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <Kathairo2>
+    <CrossWord>
+        <Words>
+            <Word>Death</Word>
+            <Number>1</Number>
+            <Clue>You need to start learning to dance before your _______  in order to learn to dance. (5 letters)</Clue>
+        </Words>
+        <Words>
+            <Word>willingness</Word>
+            <Number>2</Number>
+            <Clue>You need this character trait in order to dance (11 letters)"</Clue>
+        </Words>
+    </CrossWord>
+    </Kathairo2>
+</resources>

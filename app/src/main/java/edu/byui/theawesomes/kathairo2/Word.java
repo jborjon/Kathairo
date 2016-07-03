@@ -12,6 +12,16 @@ import java.util.List;
  */
 public class Word {
 
+    private Clue clue;
+
+
+    public void setClue(String toSet){
+        clue.setClue(toSet);
+    }
+
+    public String getClue(){
+        return clue.getClue();
+    }
     /*
      *
      */

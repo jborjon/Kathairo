@@ -16,20 +16,23 @@ import android.content.Context;
  */
 public class XMLPullParser {
 
-    static final String KEY_SITE = "site";
-    static final String KEY_NAME = "name";
-    static final String KEY_LINK = "link";
-    static final String KEY_ABOUT = "about";
-    static final String KEY_IMAGE_URL = "image";
+    static final String KEY_Resources = "resources";
+    static final String KEY_Kathairo2 = "Kathairo2";
+    static final String KEY_CroossWord = "Crosword";
+    static final String KEY_Words = "Words";
+    static final String KEY_Word = "Word";
+    static final String KEY_Number = "Number";
+    static final String KEY_Clue = "Clue";
 
-    public static List<CrossWord> getStackFromFile(Context ctx) {
+
+    public static CrossWord getStackFromFile(Context ctx, String fileName) {
 
         // List of StackSites that we will return
-        List<CrossWord> crossword;
-        crossword = new ArrayList<CrossWord>();
+        CrossWord crossword;
+        crossword = new CrossWord();
 
         // temp holder for current StackSite while parsing
-        CrossWord curStackSite = null;
+        Word wordToset = null;
         // temp holder for current text value while parsing
         String curText = "";
 
@@ -39,7 +42,7 @@ public class XMLPullParser {
             XmlPullParser xpp = factory.newPullParser();
 
             // Open up InputStream and Reader of our file.
-            FileInputStream fis = ctx.openFileInput("StackSites.xml");
+            FileInputStream fis = ctx.openFileInput(fileName);
             BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
 
             // point the parser to our file.
@@ -56,10 +59,10 @@ public class XMLPullParser {
                 // React to different event types appropriately
                 switch (eventType) {
                     case XmlPullParser.START_TAG:
-                        if (tagname.equalsIgnoreCase(KEY_SITE)) {
+                        if (tagname.equalsIgnoreCase(KEY_Words)) {
                             // If we are starting a new <site> block we need
                             //a new StackSite object to represent it
-                            curStackSite = new StackSite();
+                            wordToset = new Word();
                         }
                         break;
 
@@ -69,22 +72,16 @@ public class XMLPullParser {
                         break;
 
                     case XmlPullParser.END_TAG:
-                        if (tagname.equalsIgnoreCase(KEY_SITE)) {
+                        if (tagname.equalsIgnoreCase(KEY_Words)) {
                             // if </site> then we are done with current Site
                             // add it to the list.
-                            stackSites.add(curStackSite);
-                        } else if (tagname.equalsIgnoreCase(KEY_NAME)) {
+                            crossword.addWordObject(wordToset);
+                        } else if (tagname.equalsIgnoreCase(KEY_Word)) {
                             // if </name> use setName() on curSite
-                            curStackSite.setName(curText);
-                        } else if (tagname.equalsIgnoreCase(KEY_LINK)) {
+                            wordToset.setWord(curText);
+                        } else if (tagname.equalsIgnoreCase(KEY_Clue)) {
                             // if </link> use setLink() on curSite
-                            curStackSite.setLink(curText);
-                        } else if (tagname.equalsIgnoreCase(KEY_ABOUT)) {
-                            // if </about> use setAbout() on curSite
-                            curStackSite.setAbout(curText);
-                        } else if (tagname.equalsIgnoreCase(KEY_IMAGE_URL)) {
-                            // if </image> use setImgUrl() on curSite
-                            curStackSite.setImgUrl(curText);
+                            wordToset.setClue(curText);
                         }
                         break;
 
@@ -99,6 +96,6 @@ public class XMLPullParser {
         }
 
         // return the populated list.
-        return stackSites;
+        return crossword;
     }
 }
