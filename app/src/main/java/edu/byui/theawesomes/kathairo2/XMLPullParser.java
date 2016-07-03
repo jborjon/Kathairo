@@ -25,7 +25,7 @@ public class XMLPullParser {
     static final String KEY_Clue = "Clue";
 
 
-    public static CrossWord getStackFromFile(Context ctx, String fileName) {
+    public static CrossWord getCrossWordFromFile(Context ctx, String fileName) {
 
         // List of StackSites that we will return
         CrossWord crossword;
