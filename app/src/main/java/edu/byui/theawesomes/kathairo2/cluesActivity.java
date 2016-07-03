@@ -14,7 +14,6 @@ import java.util.List;
 
 public class cluesActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,16 +21,16 @@ public class cluesActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-
         // Display the clues
         displayClues();
     }
+
     public void mainMenuOnClick(View v){
         Intent i = new Intent(this, mainScreen.class);
         //i.putExtras(bundle);
         startActivity(i);
     }
+
     public void newGameOnClick(View v){
         Intent i = new Intent(this, crossWordActivity.class);
         //i.putExtras(bundle);
@@ -44,9 +43,7 @@ public class cluesActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-
     protected void displayClues() {
-
         //later this data will be passed in
         CrossWord crossWordDown = new CrossWord();
         crossWordDown.addWord("You need to start learning to dance before your _______  in order to learn to dance. ",1);
@@ -69,13 +66,14 @@ public class cluesActivity extends AppCompatActivity {
         cluesTextField.append("Down:" + "\n");
         for (int i = 0; i < downClues.size(); ++i) {
             //Put the clue number in text
-           cluesTextField.append(Integer.toString(downClues.get(i).getNumberOfTheWord())+". ");
+            cluesTextField.append(Integer.toString(downClues.get(i).getNumberOfTheWord())+". ");
             //put the Clue in the text
             cluesTextField.append(downClues.get(i).getWord());
             //put the amount of letters in the answer
             cluesTextField.append("("+downClues.get(i).getNumberOfCharactersInTheWord()+" letters)"+"\n");
         }
 
+        //add a space in between the two
         cluesTextField.append("\n");
 
         // Put the across clues on the screen
