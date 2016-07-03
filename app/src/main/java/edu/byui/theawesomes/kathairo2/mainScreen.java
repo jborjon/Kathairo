@@ -15,8 +15,7 @@ public class mainScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main_screen);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);}
+    }
 
     public void newGameOnClick(View v){
         Intent i = new Intent(this, crossWordActivity.class);
@@ -34,8 +33,4 @@ public class mainScreen extends AppCompatActivity {
         //i.putExtras(bundle);
         startActivity(i);
     }
-
-
-
-
 }

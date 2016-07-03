@@ -10,9 +10,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class cluesActivity extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,24 +21,16 @@ public class cluesActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         // Display the clues
         displayClues();
     }
+
     public void mainMenuOnClick(View v){
         Intent i = new Intent(this, mainScreen.class);
         //i.putExtras(bundle);
         startActivity(i);
     }
+
     public void newGameOnClick(View v){
         Intent i = new Intent(this, crossWordActivity.class);
         //i.putExtras(bundle);
@@ -51,26 +43,48 @@ public class cluesActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-
     protected void displayClues() {
+        //later this data will be passed in
+        CrossWord crossWordDown = new CrossWord();
+        crossWordDown.addWord("You need to start learning to dance before your _______  in order to learn to dance. ",1);
 
-        // Bogus data!
-        ArrayList<String> bogusData = new ArrayList<String>();
+        CrossWord crossWordAcross = new CrossWord();
+        crossWordAcross.addWord("In the 1600s dancing was very prevalent. Today, dancing is done ______",8);
+
+        //Declare the variables they will be stored in
+        List<Word> downClues = new ArrayList<Word>();
+        List<Word> acrossClues = new ArrayList<>();
+
+        //set the variables
+        downClues = crossWordDown.getCrosswordList();
+        acrossClues = crossWordAcross.getCrosswordList();
 
         // Get the appropriate text field
         TextView cluesTextField = (TextView) findViewById(R.id.cluesList);
 
-        // DELETE the following, it's just for testing
-        bogusData.add("My");
-        bogusData.add("name");
-        bogusData.add("is");
-        bogusData.add("Inigo");
-        bogusData.add("Montoya");
+        // Put the down clues on the screen
+        cluesTextField.append("Down:" + "\n");
+        for (int i = 0; i < downClues.size(); ++i) {
+            //Put the clue number in text
+            cluesTextField.append(Integer.toString(downClues.get(i).getNumberOfTheWord())+". ");
+            //put the Clue in the text
+            cluesTextField.append(downClues.get(i).getWord());
+            //put the amount of letters in the answer
+            cluesTextField.append("("+downClues.get(i).getNumberOfCharactersInTheWord()+" letters)"+"\n");
+        }
 
-        // Put the clues on the screen
-        for (int i = 0; i < bogusData.size(); ++i) {
-            // Add a list number, starting with 1, followed by the clue
-            cluesTextField.append(Integer.toString(i + 1) + ". " + bogusData.get(i) + "\n");
+        //add a space in between the two
+        cluesTextField.append("\n");
+
+        // Put the across clues on the screen
+        cluesTextField.append("Across:" + "\n");
+        for (int i = 0; i < acrossClues.size(); ++i) {
+            //Put the clue number in text
+            cluesTextField.append(Integer.toString(acrossClues.get(i).getNumberOfTheWord())+". ");
+            //put the Clue in the text
+            cluesTextField.append(acrossClues.get(i).getWord());
+            //put the amount of letters in the answer
+            cluesTextField.append("("+acrossClues.get(i).getNumberOfCharactersInTheWord()+" letters)"+"\n");
         }
     }
 }
