@@ -47,7 +47,8 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         words = crossWord.getCrosswordList();
         Log.i("list", words.get(3).getWord());
 
-        
+        XMLPullParser XMLtest = new XMLPullParser();
+
 
 
        // System.out.println(testWord.getword());

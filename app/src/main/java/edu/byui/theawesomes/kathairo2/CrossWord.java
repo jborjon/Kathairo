@@ -25,9 +25,8 @@ public class CrossWord {
      * @param numberOfWord int The position of the word
      * @return Um...nothing. That's what 'void' means.
      *****************************************************/
-    public void addWord(String wordToSet, String clueToSet, int numberOfWord){
+    public void addWord(String wordToSet, int numberOfWord){
         Word toAdd = new Word();
-        toAdd.setClue(clueToSet);
         toAdd.setWord(wordToSet);
         toAdd.setNumberOfTheWord(numberOfWord);
         crossword.add(toAdd);
