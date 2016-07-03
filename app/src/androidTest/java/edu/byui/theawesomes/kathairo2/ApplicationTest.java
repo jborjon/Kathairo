@@ -1,6 +1,7 @@
 package edu.byui.theawesomes.kathairo2;
 
 import android.app.Application;
+import android.content.Context;
 import android.test.ApplicationTestCase;
 import android.util.Log;
 
@@ -47,7 +48,8 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         words = crossWord.getCrosswordList();
         Log.i("list", words.get(3).getWord());
 
-        XMLPullParser XMLtest = new XMLPullParser();
+
+
 
 
 

@@ -15,6 +15,11 @@ public class mainScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main_screen);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        XMLPullParser XMLtest = new XMLPullParser();
+        CrossWord fromXML = new CrossWord();
+        fromXML = XMLtest.getCrossWordFromFile(mainScreen.this,"XML");
     }
 
     public void newGameOnClick(View v){
@@ -33,4 +38,6 @@ public class mainScreen extends AppCompatActivity {
         //i.putExtras(bundle);
         startActivity(i);
     }
+
+
 }
