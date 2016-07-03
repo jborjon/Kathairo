@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class cluesActivity extends AppCompatActivity {
 
@@ -54,46 +55,46 @@ public class cluesActivity extends AppCompatActivity {
 
     protected void displayClues() {
 
-        // Bogus data!
-        ArrayList<String> bogusDownData = new ArrayList<String>();
-        ArrayList<String> bogusAcrossData = new ArrayList<String>();
+        //later this data will be passed in
+        CrossWord crossWordDown = new CrossWord();
+        crossWordDown.addWord("You need to start learning to dance before your _______  in order to learn to dance. ",1);
 
-CrossWord crossWord = new CrossWord();
-        crossWord.addWord("hello",1);
-        crossWord.getCrosswordList();
+        CrossWord crossWordAcross = new CrossWord();
+        crossWordAcross.addWord("In the 1600s dancing was very prevalent. Today, dancing is done ______",8);
+
+        //Declare the variables they will be stored in
+        List<Word> downClues = new ArrayList<Word>();
+        List<Word> acrossClues = new ArrayList<>();
+
+        //set the variables
+        downClues = crossWordDown.getCrosswordList();
+        acrossClues = crossWordAcross.getCrosswordList();
 
         // Get the appropriate text field
         TextView cluesTextField = (TextView) findViewById(R.id.cluesList);
 
-        // DELETE the following, it's just for testing
-        bogusDownData.add("You need to start learning to dance before your _______  in order to learn to dance. (5 letters)");
-        bogusDownData.add("name");
-        bogusDownData.add("is");
-        bogusDownData.add("Inigo");
-        bogusDownData.add("Montoya");
-
-        bogusAcrossData.add("In the 1600s dancing was very prevalent. Today, dancing is done ______");
-        bogusAcrossData.add("prepare");
-        bogusAcrossData.add("to");
-        bogusAcrossData.add("die");
-
-
         // Put the down clues on the screen
         cluesTextField.append("Down:" + "\n");
-        for (int i = 0; i < bogusDownData.size(); ++i) {
-            //we will have to access the clue number later... once we have it
-            // Add a list number, starting with 1, followed by the clue
-            cluesTextField.append(Integer.toString(i + 1) + ". " + bogusDownData.get(i) + "\n");
+        for (int i = 0; i < downClues.size(); ++i) {
+            //Put the clue number in text
+           cluesTextField.append(Integer.toString(downClues.get(i).getNumberOfTheWord())+". ");
+            //put the Clue in the text
+            cluesTextField.append(downClues.get(i).getWord());
+            //put the amount of letters in the answer
+            cluesTextField.append("("+downClues.get(i).getNumberOfCharactersInTheWord()+" letters)"+"\n");
         }
 
         cluesTextField.append("\n");
 
         // Put the across clues on the screen
-        cluesTextField.append("\nAcross:" + "\n");
-        for (int i = 0; i < bogusAcrossData.size(); ++i) {
-            //we will have to access the clue number later... once we have it
-            // Add a list number, starting with 1, followed by the clue
-            cluesTextField.append(Integer.toString(i + 1) + ". " + bogusAcrossData.get(i) + "\n");
+        cluesTextField.append("Across:" + "\n");
+        for (int i = 0; i < acrossClues.size(); ++i) {
+            //Put the clue number in text
+            cluesTextField.append(Integer.toString(acrossClues.get(i).getNumberOfTheWord())+". ");
+            //put the Clue in the text
+            cluesTextField.append(acrossClues.get(i).getWord());
+            //put the amount of letters in the answer
+            cluesTextField.append("("+acrossClues.get(i).getNumberOfCharactersInTheWord()+" letters)"+"\n");
         }
     }
 }
