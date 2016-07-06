@@ -15,7 +15,7 @@ import java.util.List;
  * Created by Jordan on 7/4/16. code obtained and modified from
  * https://developer.android.com/training/basics/network-ops/xml.html
  */
-public class CrosswordXmlParser {
+public class crosswordXmlParser {
     // We don't use namespaces
     private static final String ns = null;
 
