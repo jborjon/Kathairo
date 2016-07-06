@@ -11,29 +11,37 @@ import java.util.List;
  * @since       1.2          (the version of the package this class was first added to)
  */
 public class Word {
-
+    /*
+     * This is the clue the user will recevie it is an object
+     */
     private Clue clue;
+    /*
+     *This is set by using setWord() and you pass it a string
+     * it is the answer that we are looking for
+     */
+    private List<CharacterCell> answer = new ArrayList<CharacterCell>();
+    /*
+     *this is the number of letters in the answer
+     * let's rename this to answer (from word) find and replace
+     */
+    private int numberofLettersInAnswer;
+    /*
+     *this is the clue number within the list of clues
+     */
+   // private int clueNumber = 0;
+    private String clueNumber;
 
-
-    public void setClue(String toSet){
-        clue.setClue(toSet);
+    protected Word(Clue clue, String answer, String clueNumber) {
+        this.clue = clue;
+        this.setAnswer(answer);
+        this.clueNumber = clueNumber;
+        //this.setClueNumber(clueNumber);
     }
 
-    public String getClue(){
-        return clue.getClue();
+    protected Word() {
+        this.clue = new Clue();
+        this.setClueNumber(null);
     }
-    /*
-     *
-     */
-    private List<CharacterCell> word = new ArrayList<CharacterCell>();
-    /*
-     *
-     */
-    private int numberCharactersInTheWord;
-    /*
-     *
-     */
-    private int numberOfTheWord = 0;
 
     /****************************************************
      *This sets the word
@@ -42,19 +50,18 @@ public class Word {
      *     properly.
      * </p>
      *
-     * @param String wordToSet
+     * @param answerToSet
      * @return nothing
      *****************************************************/
-    public void setWord(String wordToSet){
-
-        for(int i = 0; i < wordToSet.length(); i++){
-            CharacterCell cell = new CharacterCell();
-            cell.setCharacter("" + wordToSet.charAt(i));
-            cell.setIndex(i);
-            numberCharactersInTheWord = i;
-            word.add(cell);
-        }
-        Log.i("setWord","Word set");
+    public void setAnswer(String answerToSet){
+            for (int i = 0; i < answerToSet.length(); i++) {
+                CharacterCell cell = new CharacterCell();
+                cell.setCharacter("" + answerToSet.charAt(i));
+                cell.setIndex(i);
+                numberofLettersInAnswer = i;
+                answer.add(cell);
+            }
+            Log.i("setWord", "Word set");
     }
 
     /****************************************************
@@ -64,27 +71,28 @@ public class Word {
      *
      * </p>
      *
-     * @param none
+     *
      * @return String completeWord
      *****************************************************/
-    public String getWord(){
-        String completeWord = "";
-        for (int i = 0; i < word.size(); i++) {
-            completeWord += word.get(i).getCharacter();
-            Log.i("getWord()Parts", completeWord);
-        }
-        Log.i("getWord()", completeWord);
+    public String getAnswer(){
 
-        return completeWord;
+        String completeAnswer = "";
+        for (int i = 0; i < answer.size(); i++) {
+            completeAnswer += answer.get(i).getCharacter();
+            Log.i("getWord()Parts", completeAnswer);
+        }
+        Log.i("getWord()", completeAnswer);
+
+        return completeAnswer;
     }
 
     /****************************************************
      * Gets the number of characters in a word.
-     * @param nothing
+     * @param
      * @return int numberCharactersInTheWord
      *****************************************************/
-    public int getNumberOfCharactersInTheWord(){
-        return numberCharactersInTheWord;
+    public int getNumberOfLettersInAnswer(){
+        return numberofLettersInAnswer;
     }
 
     /****************************************************
@@ -92,16 +100,30 @@ public class Word {
      * @param index
      * @return void
      *****************************************************/
-    public void setNumberOfTheWord(int index){
-        numberOfTheWord = index;
+    public void setClueNumber(String index){
+        clueNumber = index;
     }
 
     /****************************************************
      * Gets the number of the word
-     * @param Nothing
+     * @param
      * @return int numberOfTheWord
      *****************************************************/
-    public int getNumberOfTheWord(){
-        return numberOfTheWord;
+    public String getClueNumber(){
+        return clueNumber;
+    }
+
+
+    public void setClue(String ClueToSet){
+        if(clue != null) {
+            clue.setClue(ClueToSet);
+        }
+        else{
+            clue = new Clue(ClueToSet);
+        }
+
+    }
+    public String getClue(){
+        return clue.getClue();
     }
 }

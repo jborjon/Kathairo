@@ -25,11 +25,11 @@ public class XMLPullParser {
     static final String KEY_Clue = "Clue";
 
 
-    public static CrossWord getCrossWordFromFile(Context ctx, String fileName) {
+    public static Crossword getCrossWordFromFile(Context ctx, String fileName) {
 
         // List of StackSites that we will return
-        CrossWord crossword;
-        crossword = new CrossWord();
+        Crossword crossword;
+        crossword = new Crossword();
 
         // temp holder for current StackSite while parsing
         Word wordToset = null;
@@ -78,7 +78,7 @@ public class XMLPullParser {
                             crossword.addWordObject(wordToset);
                         } else if (tagname.equalsIgnoreCase(KEY_Word)) {
                             // if </name> use setName() on curSite
-                            wordToset.setWord(curText);
+                            //wordToset.setWord(curText);
                         } else if (tagname.equalsIgnoreCase(KEY_Clue)) {
                             // if </link> use setLink() on curSite
                             wordToset.setClue(curText);
