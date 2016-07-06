@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".mainScreen"
+            android:name=".MainScreen"
             android:label="Kathairo"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,31 +19,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".crossWordActivity"
+            android:name=".CrosswordActivity"
             android:label="@string/title_activity_cross_word"
-            android:parentActivityName=".mainScreen"
+            android:parentActivityName=".MainScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="edu.byui.theawesomes.kathairo2.mainScreen" />
+                android:value="edu.byui.theawesomes.kathairo2.MainScreen" />
         </activity>
         <activity
-            android:name=".cluesActivity"
+            android:name=".CluesActivity"
             android:label="@string/title_activity_clues"
-            android:parentActivityName=".crossWordActivity"
+            android:parentActivityName=".CrosswordActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="edu.byui.theawesomes.kathairo2.crossWordActivity" />
+                android:value="edu.byui.theawesomes.kathairo2.CrosswordActivity" />
         </activity>
         <activity
-            android:name=".aboutActivity"
+            android:name=".AboutActivity"
             android:label="@string/title_activity_about"
-            android:parentActivityName=".mainScreen"
+            android:parentActivityName=".MainScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="edu.byui.theawesomes.kathairo2.mainScreen" />
+                android:value="edu.byui.theawesomes.kathairo2.MainScreen" />
         </activity>
     </application>
 
