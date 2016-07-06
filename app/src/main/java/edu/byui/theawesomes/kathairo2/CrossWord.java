@@ -8,7 +8,7 @@ import java.util.List;
  * @version     1.6                 (current version number of program)
  * @since       1.2          (the version of the package this class was first added to)
  */
-public class Crossword {
+public class CrossWord {
     /**
         This is the list of words for the crossword
      */
@@ -17,7 +17,7 @@ public class Crossword {
     /****************************************************
      * Default Constructor just needs to be protected
      *****************************************************/
-    protected Crossword() {
+    protected CrossWord() {
 
 
     }
