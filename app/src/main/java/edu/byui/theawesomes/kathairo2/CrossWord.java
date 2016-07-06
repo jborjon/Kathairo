@@ -37,7 +37,6 @@ public class Crossword {
         toAdd.setAnswer(answerToSet);
         toAdd.setClueNumber(clueNumber);
         crossword.add(toAdd);
-        IHATEYOU = "I HATE YOU";
     }
 
     /****************************************************
@@ -47,7 +46,6 @@ public class Crossword {
     public List<Word> getCrosswordList(){
         return crossword;
     }
-private String IHATEYOU;
     /****************************************************
      * Sets the crossword list
      * @param crossword

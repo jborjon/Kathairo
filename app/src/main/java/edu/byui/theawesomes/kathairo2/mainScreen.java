@@ -20,7 +20,7 @@ import java.net.ContentHandler;
 import java.util.ArrayList;
 import java.util.List;
 
-public class mainScreen extends AppCompatActivity {
+public class MainScreen extends AppCompatActivity {
 
     Crossword crossword;
     @Override
@@ -35,18 +35,18 @@ public class mainScreen extends AppCompatActivity {
     }
 
     public void newGameOnClick(View v){
-        Intent i = new Intent(this, crosswordActivity.class);
+        Intent i = new Intent(this, CrosswordActivity.class);
         //i.putExtras(bundle);
         startActivity(i);
     }
 
     public void aboutOnClick(View v){
-        Intent i = new Intent(this, aboutActivity.class);
+        Intent i = new Intent(this, AboutActivity.class);
         startActivity(i);
     }
 
     public void cluesOnClick(View v){
-        Intent i = new Intent(this, cluesActivity.class);
+        Intent i = new Intent(this, CluesActivity.class);
         //i.putExtras(bundle);
         startActivity(i);
     }
