@@ -24,37 +24,20 @@ public class cluesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_clues);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-//
         /*******************
          * Load the crossword
          */
         Crossword crossword = new Crossword();
-//        //Below is testing to get the xml file to work
+        //Below is testing to get the xml file to work
         try {
             CrosswordXmlParser crosswordXmlParser = new CrosswordXmlParser();
-
-//            TextView testText = (TextView) findViewById(R.id.testText);
-//            TextView testTextD = (TextView) findViewById(R.id.testText2);
-//            TextView testTextD1 = (TextView) findViewById(R.id.testText3);
-
             AssetManager assetManager = getAssets();
-
             crossword.setCrosswordList(crosswordXmlParser.parse(assetManager.open("test.xml")));
-
-//            testTextD.setText(crossword.getCrosswordList().get(0).getClue());
-//            testTextD1.setText(crossword.getCrosswordList().get(0).getClueNumber());
-//            testText.setText(crossword.getCrosswordList().get(0).getAnswer());
-
         } catch (IOException e) {
             e.printStackTrace();
-//            TextView testText = (TextView) findViewById(R.id.testText);
-//            testText.setText("ERROR:IO thing");
         } catch (XmlPullParserException e) {
             e.printStackTrace();
-//            TextView testText = (TextView) findViewById(R.id.testText);
-//            testText.setText("ERROR: XML thing");
         }
-        // End of the testing
 
         // Display the clues
         displayClues(crossword);

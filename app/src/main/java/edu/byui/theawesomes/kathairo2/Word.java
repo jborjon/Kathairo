@@ -30,7 +30,6 @@ public class Word {
      */
     private String clueNumber;
 
-
     /****************************************************
      * Non-Default Constructor to set up everything
      *****************************************************/
@@ -118,7 +117,6 @@ public class Word {
     public String getClueNumber(){
         return clueNumber;
     }
-
 
     /****************************************************
      * Gets the number of the word
