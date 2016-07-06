@@ -35,7 +35,7 @@ public class mainScreen extends AppCompatActivity {
     }
 
     public void newGameOnClick(View v){
-        Intent i = new Intent(this, crossWordActivity.class);
+        Intent i = new Intent(this, crosswordActivity.class);
         //i.putExtras(bundle);
         startActivity(i);
     }

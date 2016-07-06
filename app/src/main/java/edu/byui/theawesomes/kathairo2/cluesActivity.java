@@ -32,7 +32,7 @@ public class cluesActivity extends AppCompatActivity {
         try {
             CrosswordXmlParser crosswordXmlParser = new CrosswordXmlParser();
             AssetManager assetManager = getAssets();
-            crossword.setCrosswordList(crosswordXmlParser.parse(assetManager.open("test.xml")));
+            crossword.setCrosswordList(crosswordXmlParser.parse(assetManager.open("crossword.xml")));
         } catch (IOException e) {
             e.printStackTrace();
         } catch (XmlPullParserException e) {
@@ -50,7 +50,7 @@ public class cluesActivity extends AppCompatActivity {
     }
 
     public void newGameOnClick(View v){
-        Intent i = new Intent(this, crossWordActivity.class);
+        Intent i = new Intent(this, crosswordActivity.class);
         //i.putExtras(bundle);
         startActivity(i);
     }
