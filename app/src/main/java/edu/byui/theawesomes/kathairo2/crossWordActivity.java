@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class crossWordActivity extends AppCompatActivity {
+public class crosswordActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class crossWordActivity extends AppCompatActivity {
         startActivity(i);
     }
     public void newGameOnClick(View v){
-        Intent i = new Intent(this, crossWordActivity.class);
+        Intent i = new Intent(this, crosswordActivity.class);
         //i.putExtras(bundle);
         startActivity(i);
     }
