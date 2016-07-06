@@ -6,30 +6,53 @@ package edu.byui.theawesomes.kathairo2;
 public class Clue {
     //the clue the user gets so they can give us the answer
     private String clue;
+    //if we the puzzle screen is to display this clue
     private boolean isDisplayed = false;
 
-    protected Clue(String string){
-        this.clue = string;
+    /****************************************************
+     * Non default constructor to instantiate the string clue
+     *****************************************************/
+    protected Clue(String clue){
+        this.clue = clue;
     }
 
+    /****************************************************
+     * Default constructor to instantiate the string clue
+     *****************************************************/
     protected Clue(){
         this.clue = null;
     }
 
 
+    /****************************************************
+     * gets the crossword list
+     * @return clue
+     *****************************************************/
     public String getClue(){
         return clue;
     }
-    public void setClue(String toSet){
-        clue = toSet;
+
+    /****************************************************
+     * Sets the crossword list
+     * @param clue
+     *****************************************************/
+    public void setClue(String clue){
+        this.clue = clue;
     }
 
-    public void setDisplayed(boolean toSet){
-        isDisplayed = toSet;
-    }
-
+    /****************************************************
+     * gets the crossword list
+     * @return clue
+     *****************************************************/
     public Boolean getIsDisplayed(){
         return isDisplayed;
     }
 
+    /****************************************************
+     * Sets the crossword list
+     * @param toSet
+     *****************************************************/
+    public void setDisplayed(boolean toSet){
+        isDisplayed = toSet;
+    }
 }

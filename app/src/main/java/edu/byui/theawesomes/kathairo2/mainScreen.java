@@ -33,9 +33,7 @@ public class mainScreen extends AppCompatActivity {
 
 
     }
-    public void displayText(String string) {
-        TextView testTextD = (TextView) findViewById(R.id.testText2);
-    }
+
     public void newGameOnClick(View v){
         Intent i = new Intent(this, crossWordActivity.class);
         //i.putExtras(bundle);

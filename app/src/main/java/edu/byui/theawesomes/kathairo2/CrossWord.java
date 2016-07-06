@@ -8,12 +8,19 @@ import java.util.List;
  * @version     1.6                 (current version number of program)
  * @since       1.2          (the version of the package this class was first added to)
  */
-public class CrossWord {
+public class Crossword {
     /**
-
+        This is the list of words for the crossword
      */
     private List<Word> crossword = new ArrayList<Word>();
 
+    /****************************************************
+     * Default Constructor just needs to be protected
+     *****************************************************/
+    protected Crossword() {
+
+
+    }
     /****************************************************
      * Adds a word to the Crossword.
      *
@@ -21,28 +28,35 @@ public class CrossWord {
      * takes a word and a number that is used to place the
      * word properly.
      *
-     * @param wordToSet String The word to add
-     * @param numberOfWord int The position of the word
+     * @param answerToSet String The word to add
+     * @param clueNumber int The position of the word
      * @return Um...nothing. That's what 'void' means.
      *****************************************************/
-    public void addWord(String wordToSet, int numberOfWord){
+    public void addWord(String answerToSet, String clueNumber){
         Word toAdd = new Word();
-        toAdd.setWord(wordToSet);
-        toAdd.setNumberOfTheWord(numberOfWord);
+        toAdd.setAnswer(answerToSet);
+        toAdd.setClueNumber(clueNumber);
         crossword.add(toAdd);
-
     }
 
     /****************************************************
-     * Returns all the words in the crossword puzzle.
-     *
-     * @return A list of all the words in the crossword puzzle
-     *
+     * Returns all the words in the crossword puzzle.*
+     * @return A list of all the words in the crossword puzzle*
      *****************************************************/
     public List<Word> getCrosswordList(){
         return crossword;
     }
 
+    /****************************************************
+     * Sets the crossword list
+     * @param crossword
+     *****************************************************/
+    public void setCrosswordList(List<Word> crossword){ this.crossword = crossword;}
+
+    /****************************************************
+     * adds a word object to crossword
+     * @param toSet
+     *****************************************************/
     public void addWordObject(Word toSet){
         crossword.add(toSet);
     }

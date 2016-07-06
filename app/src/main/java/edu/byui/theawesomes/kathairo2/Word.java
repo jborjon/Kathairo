@@ -16,21 +16,24 @@ public class Word {
      */
     private Clue clue;
     /*
-     *This is set by using setWord() and you pass it a string
+     * This is set by using setWord() and you pass it a string
      * it is the answer that we are looking for
      */
     private List<CharacterCell> answer = new ArrayList<CharacterCell>();
     /*
-     *this is the number of letters in the answer
+     * this is the number of letters in the answer
      * let's rename this to answer (from word) find and replace
      */
     private int numberofLettersInAnswer;
     /*
-     *this is the clue number within the list of clues
+     * this is the clue number within the list of clues
      */
-   // private int clueNumber = 0;
     private String clueNumber;
 
+
+    /****************************************************
+     * Non-Default Constructor to set up everything
+     *****************************************************/
     protected Word(Clue clue, String answer, String clueNumber) {
         this.clue = clue;
         this.setAnswer(answer);
@@ -38,6 +41,9 @@ public class Word {
         //this.setClueNumber(clueNumber);
     }
 
+    /****************************************************
+     * Default Constructor to set up things initally
+     *****************************************************/
     protected Word() {
         this.clue = new Clue();
         this.setClueNumber(null);
@@ -107,13 +113,18 @@ public class Word {
     /****************************************************
      * Gets the number of the word
      * @param
-     * @return int numberOfTheWord
+     * @return String clueNumber
      *****************************************************/
     public String getClueNumber(){
         return clueNumber;
     }
 
 
+    /****************************************************
+     * Gets the number of the word
+     * @param ClueToSet
+     * @return
+     *****************************************************/
     public void setClue(String ClueToSet){
         if(clue != null) {
             clue.setClue(ClueToSet);
@@ -123,6 +134,12 @@ public class Word {
         }
 
     }
+
+    /****************************************************
+     * Gets the number of the word
+     * @param
+     * @return clue.getClue()
+     *****************************************************/
     public String getClue(){
         return clue.getClue();
     }
