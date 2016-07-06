@@ -9,7 +9,7 @@ import java.util.List;
  * @since       1.2          (the version of the package this class was first added to)
  */
 public class Crossword {
-    /**
+    /*****
         This is the list of words for the crossword
      */
     private List<Word> crossword = new ArrayList<Word>();
@@ -37,6 +37,7 @@ public class Crossword {
         toAdd.setAnswer(answerToSet);
         toAdd.setClueNumber(clueNumber);
         crossword.add(toAdd);
+        IHATEYOU = "I HATE YOU";
     }
 
     /****************************************************
@@ -46,7 +47,7 @@ public class Crossword {
     public List<Word> getCrosswordList(){
         return crossword;
     }
-
+private String IHATEYOU;
     /****************************************************
      * Sets the crossword list
      * @param crossword
