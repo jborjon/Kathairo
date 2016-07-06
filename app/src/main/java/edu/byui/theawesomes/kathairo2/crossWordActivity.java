@@ -16,6 +16,11 @@ public class crossWordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cross_word);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Word test = new Word();
+        test.setAnswer("hello");
+
+
     }
 
     public void mainMenuOnClick(View v){

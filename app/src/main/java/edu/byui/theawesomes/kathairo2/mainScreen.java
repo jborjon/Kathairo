@@ -22,7 +22,7 @@ import java.util.List;
 
 public class mainScreen extends AppCompatActivity {
 
-    Crossword crossword;
+    CrossWord crossword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
