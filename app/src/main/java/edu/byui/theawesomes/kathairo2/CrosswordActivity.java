@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 public class CrosswordActivity extends AppCompatActivity {
 
@@ -18,8 +19,17 @@ public class CrosswordActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Word test = new Word();
-        test.setAnswer("hello");
+        test.setAnswer("1234");
 
+       // TextView testview = (TextView) findViewById(R.id.test);
+        TextView A1L1 = (TextView) findViewById(R.id.A1L1);
+        TextView A1L2 = (TextView)findViewById(R.id.A1L2);
+
+       // testview.setText("esta es");
+        CharacterCell word1 = new CharacterCell();
+        word1.setCharacter("K");
+        A1L1.setText(test.getLetter(1));
+        A1L2.setText("W");
 
     }
 

@@ -7,7 +7,7 @@
         </Word>
         <Word>
             <clue type = "text">You need this character trait in order to dance</clue>
-            <answer type = "text"> willingness</answer>
+            <answer type = "text">willingness</answer>
             <clueNumber type = "text">2</clueNumber><!-- try to make this a int -->
         </Word>
         <Word>
@@ -17,7 +17,7 @@
         </Word>
         <Word>
             <clue type = "text">_______  are the only people that still ballroom dance today.</clue>
-            <answer type = "text"> humans</answer>
+            <answer type = "text">humans</answer>
             <clueNumber type = "text">4</clueNumber><!-- try to make this a int -->
         </Word>
         <Word>
@@ -25,7 +25,7 @@
             <answer type = "text">simplecomplex</answer>
             <clueNumber type = "text">5</clueNumber><!-- try to make this a int -->
         </Word>
-        <Word>
+        <Word>tytytymm ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <clue type = "text">You can often times dance to this kind of music</clue>
             <answer type = "text">contemporary</answer>
             <clueNumber type = "text">6</clueNumber><!-- try to make this a int -->

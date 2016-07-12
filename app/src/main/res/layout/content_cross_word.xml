@@ -10,33 +10,98 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="edu.byui.theawesomes.kathairo2.crossWordActivity"
-    tools:showIn="@layout/activity_cross_word">
+    tools:showIn="@layout/activity_cross_word"
+    android:id="@+id/Layout"
+    android:background="#acaaaa"
+    android:minWidth="12dp"
+    android:focusable="false"
+    android:textAlignment="center"
+    android:touchscreenBlocksFocus="false">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Puzzle"
         android:id="@+id/button2"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="440dp" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Menu"
         android:id="@+id/button3"
-        android:layout_marginBottom="0dp"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="false"
-        android:layout_marginTop="440dp"
-        android:onClick="mainMenuOnClick" />
+        android:onClick="mainMenuOnClick"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Clues"
         android:id="@+id/button"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="440dp"
-        android:onClick="cluesOnClick" />
+        android:onClick="cluesOnClick"
+        android:layout_alignTop="@+id/button3"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_toEndOf="@+id/button3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:id="@+id/A1L1"
+        android:background="#ffffff"
+        android:focusableInTouchMode="true"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:id="@+id/A1L2"
+        android:background="#ffffff"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/A1L1"
+        android:layout_alignLeft="@+id/A1L1"
+        android:layout_alignStart="@+id/A1L1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:id="@+id/A1L3"
+        android:background="#ffffff"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/A1L2"
+        android:layout_alignLeft="@+id/A1L2"
+        android:layout_alignStart="@+id/A1L2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:id="@+id/A1L4"
+        android:background="#ffffff"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/A1L3"
+        android:layout_alignLeft="@+id/A1L3"
+        android:layout_alignStart="@+id/A1L3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:id="@+id/A1L5"
+        android:background="#ffffff"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/A1L4"
+        android:layout_alignLeft="@+id/A1L4"
+        android:layout_alignStart="@+id/A1L4" />
+
 </RelativeLayout>
