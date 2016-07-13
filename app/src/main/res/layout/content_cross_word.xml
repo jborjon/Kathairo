@@ -27,7 +27,8 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp"
+            android:textSize="20dp" />
 
         <TextView
             android:layout_width="wrap_content"

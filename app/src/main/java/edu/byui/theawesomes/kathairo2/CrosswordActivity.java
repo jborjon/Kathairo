@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class CrosswordActivity extends AppCompatActivity {
 
@@ -21,6 +22,32 @@ public class CrosswordActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Word test = new Word();
+        //Boolean[][] testInput = new Boolean[21][2];
+        //Arrays.fill(testInput, Boolean.FALSE);
+        Boolean[][] testInput = {{false},{false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false},
+                            {false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false}};
+        testInput[1][1] =  true;
+
+        for(int r=1; r<=2; r++) {
+            for (int c = 1; c <= 21; c++) {
+                String buttonID = "r" + r + "c" + c;
+                int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
+                TextView textView = (TextView) findViewById(resID);
+
+                textView.setText("");
+                textView.setMaxWidth(30);
+                textView.setMaxHeight(45);
+                textView.setWidth(30);
+                textView.setHeight(50);
+                textView.setX(c);
+                textView.setY(r);
+                textView.setTextSize(40);
+                if(testInput[r][c] == true){
+                    textView.setText("E");
+                }
+/**/
+            }
+        }
 
     }
 
@@ -37,25 +64,7 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
     public void cluesOnClick(View v){
-        TextView textViev2 = (TextView) findViewById(R.id.r1c1);
-        textViev2.setText("1");
-        for(int r=1; r<=2; r++) {
-            for (int c = 1; c <= 21; c++) {
-                TextView textViev3 = (TextView) findViewById(R.id.r2c21);
-                textViev2.setText("r"+r+"c"+c);
 
-                String buttonID = "r" + r + "c" + c;
-                int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
-                TextView textView = (TextView) findViewById(resID);
-                textView.setText("H");
-                textView.setMaxWidth(20);
-                textView.setMaxHeight(45);
-                textView.setWidth(20);
-                textView.setX(10 * c);
-                textView.setY(45 * r);
-/**/
-            }
-        }
 
         /*
         Intent i = new Intent(this, CluesActivity.class);
