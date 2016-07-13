@@ -85,4 +85,22 @@
         android:layout_above="@+id/testText2"
         android:layout_alignLeft="@+id/testText2"
         android:layout_alignStart="@+id/testText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/testInput1"
+        android:layout_alignBottom="@+id/aboutBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/testInput2"
+        android:layout_above="@+id/testInput1"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:maxLength="1" />
 </RelativeLayout>
