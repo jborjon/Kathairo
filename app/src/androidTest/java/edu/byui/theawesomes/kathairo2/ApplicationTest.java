@@ -31,22 +31,6 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         String characterInCell = "Character in cel is " + test.getCharacter();
         Log.i("Felipes", characterInCell);
 
-        Word testWord = new Word();
-        testWord.setWord("estoy loco");
-        String display = testWord.getWord();
-        Log.i("Fe", display);
-
-        CrossWord crossWord = new CrossWord();
-
-        crossWord.addWord("hola", 1);
-        crossWord.addWord("como", 2);
-        crossWord.addWord("estas", 3);
-        crossWord.addWord("hoy?", 4);
-
-        List<Word> words = new ArrayList<Word>();
-
-        words = crossWord.getCrosswordList();
-        Log.i("list", words.get(3).getWord());
 
 
 

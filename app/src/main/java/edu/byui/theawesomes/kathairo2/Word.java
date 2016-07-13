@@ -48,6 +48,18 @@ public class Word {
         this.setClueNumber(null);
     }
 
+    public String getLetter(int index){
+
+        String character = "";
+        CharacterCell toReturn = new CharacterCell();
+        for (int i = 0; i < answer.size(); i++) {
+            if(i == index) {
+                toReturn = answer.get(i);
+                character = toReturn.getCharacter();
+            }
+        }
+        return character;
+    }
     /****************************************************
      *This sets the word
      * <p>
@@ -58,12 +70,13 @@ public class Word {
      * @param answerToSet
      * @return nothing
      *****************************************************/
+
     public void setAnswer(String answerToSet){
             for (int i = 0; i < answerToSet.length(); i++) {
                 CharacterCell cell = new CharacterCell();
                 cell.setCharacter("" + answerToSet.charAt(i));
                 cell.setIndex(i);
-                numberofLettersInAnswer = i;
+                numberofLettersInAnswer = i + 1;
                 answer.add(cell);
             }
             Log.i("setWord", "Word set");

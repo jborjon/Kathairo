@@ -83,6 +83,7 @@ public class CluesActivity extends AppCompatActivity {
             cluesTextField.append(downClues.get(i).getClue()+"\n");
             //put the amount of letters in the answer
 //            cluesTextField.append("("+downClues.get(i).getNumberOfLettersInAnswer()+" letters)"+"\n");
+            cluesTextField.append(downClues.get(i).getAnswer()+" "+ downClues.get(i).getNumberOfLettersInAnswer()+"\n");
         }
 
         //add a space in between the two
