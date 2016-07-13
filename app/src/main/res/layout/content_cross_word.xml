@@ -15,10 +15,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:columnCount="23"
-        android:rowCount="15"
+        android:rowCount="18"
         android:layout_marginTop="46dp">
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -28,9 +28,10 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:inputType="text" />
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -40,8 +41,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
-            />
-        <TextView
+            android:inputType="text" />
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -51,7 +52,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -61,7 +62,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -71,7 +72,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -81,7 +82,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -91,7 +92,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -102,7 +103,7 @@
 
             android:layout_margin="2dp"/>
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -113,7 +114,7 @@
 
             android:layout_margin="2dp"/>
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -123,7 +124,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -133,7 +134,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -143,7 +144,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -153,7 +154,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -163,7 +164,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -173,7 +174,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -183,7 +184,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -193,7 +194,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -203,7 +204,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -213,7 +214,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -223,7 +224,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -238,7 +239,7 @@
 
         // ROW 2
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -249,7 +250,7 @@
 
             android:layout_margin="2dp" />
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -260,7 +261,7 @@
 
             android:layout_margin="2dp"
             />
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -270,7 +271,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -280,7 +281,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -290,7 +291,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -300,7 +301,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -310,7 +311,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -321,7 +322,7 @@
 
             android:layout_margin="2dp"/>
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -332,7 +333,7 @@
 
             android:layout_margin="2dp"/>
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -342,7 +343,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -352,7 +353,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -362,7 +363,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -372,7 +373,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -382,7 +383,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -392,7 +393,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -402,7 +403,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -412,7 +413,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -422,7 +423,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -432,7 +433,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="H"
@@ -442,7 +443,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="o"
@@ -453,6 +454,32 @@
 
             android:layout_margin="2dp"/>
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r5c5"
+            android:layout_row="16"
+            android:layout_column="7"
+            android:text="H"
+            android:inputType="none" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r5c7"
+            android:layout_row="17"
+            android:layout_column="8"
+            android:text="H"
+            android:inputType="none" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r5c8"
+            android:layout_row="17"
+            android:layout_column="9"
+            android:text="H"
+            android:inputType="number" />
 
 
     </GridLayout>
