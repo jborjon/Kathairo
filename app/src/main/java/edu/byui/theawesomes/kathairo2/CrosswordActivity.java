@@ -1,15 +1,18 @@
 package edu.byui.theawesomes.kathairo2;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,6 +28,16 @@ public class CrosswordActivity extends AppCompatActivity {
     //Perhaps when you click on the text box it becomes editable
     //Setting the background to black for nonediitable and white for editiable
     //
+
+
+    //Add the to upper function
+    // back button to the clues
+    // make the clues bigger
+    //don't have answer
+    //Numbers on the crossword
+    //reset letter on click
+    //
+
 
     //Which of these are valid?
     Boolean[][] validInput = new Boolean[16][22];
@@ -43,8 +56,6 @@ public class CrosswordActivity extends AppCompatActivity {
         setCrosswordValidInput();
         setCrosswordTextBoxes();
         setValidAnswers();
-
-
     }
 
     public void mainMenuOnClick(View v){
@@ -62,10 +73,10 @@ public class CrosswordActivity extends AppCompatActivity {
                     String buttonID = "r" + r + "c" + c;
                     int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                     EditText textView = (EditText) findViewById(resID);
-                    if (!((textView.getText().toString()).equals(Character.toString(validAnswer[r][c])))) {
+                    if (!((textView.getText().toString().toUpperCase()).equals(Character.toString(validAnswer[r][c])))) {
                     isSolved = false;
-
                         textView.setBackgroundColor(Color.RED);
+                        textView.setText("");
                     }
                     else{
                         textView.setBackgroundColor(Color.GREEN);
@@ -74,19 +85,51 @@ public class CrosswordActivity extends AppCompatActivity {
                 }
             }
         }
-        CharSequence text = "";
+
         if(isSolved == true){
-            text = "Congratualtions you finished!";
+            AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+            builder1.setMessage("Congratualtions you finished!");
+            builder1.setCancelable(true);
+
+            builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    dialog.cancel();
+                }
+            });
+            //for when we have the play again option
+            /*
+            builder1.setPositiveButton(
+                    "Yes",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+
+            builder1.setNegativeButton(
+                    "No",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+            */
+            AlertDialog alert11 = builder1.create();
+            alert11.show();
         }
         else {
-            text = "Sorry you aren't quite done yet!";
+            AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+            builder1.setMessage("Sorry you aren't quite done yet!");
+            builder1.setCancelable(true);
+
+            builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    dialog.cancel();
+                }
+            });
+            AlertDialog alert11 = builder1.create();
+            alert11.show();
         }
-        Context context = getApplicationContext();
-
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
     }
 
     public void newGameOnClick(View v){
@@ -111,7 +154,7 @@ public class CrosswordActivity extends AppCompatActivity {
         for(int r = 1; r <= 15; r++) {
             for (int c = 1; c <= 21; c++) {
                 String buttonID = "r" + r + "c" + c;
-                int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
+                final int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                 EditText textView = (EditText) findViewById(resID);
 
                 formatTextBoxes(textView,r,c);
@@ -120,12 +163,29 @@ public class CrosswordActivity extends AppCompatActivity {
                     textView.setEnabled(Boolean.TRUE);
                     textView.setBackgroundColor(Color.WHITE);
                     textView.setTextColor(Color.BLACK);
-
                     textView.setText("");
+                    final TextView buttonT = (TextView) findViewById(resID);
+                    final int finalC = c;
+                    final int finalR = r;
+                    buttonT.setOnTouchListener(new View.OnTouchListener() {
+                        @Override
+                        public boolean onTouch(View v, MotionEvent event) {
+                            TextView textView = (TextView) findViewById(resID);
+                            if (!((textView.getText().toString().toUpperCase()).equals(Character.toString(validAnswer[finalR][finalC])))) {
+                                textView.setBackgroundColor(Color.WHITE);
+                                textView.setText("");
+                            }
+                            return false;
+                        }
+                    });
                 }
 /**/
             }
         }
+    }
+
+    public void formatNumberBoxes(TextView textView, int count){
+        textView.setText(Integer.toString(count));
     }
 
     public void formatTextBoxes(TextView textView, int r, int c){

@@ -36,30 +36,10 @@ public class MainScreen extends AppCompatActivity {
     }
 
     public void newGameOnClick(View v){
-        /*for(int i=1; i<=2; i++) {
-            String buttonID = "testInput" + i;
-            int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
-            TextView textView = (TextView)   findViewById(resID);
+       Bundle bundle = new Bundle();
 
-            textView.setText("");
-            textView.setMaxWidth(20);
-            textView.setMaxHeight(45);
-            textView.setWidth(20);
-            textView.setX(50*(i%15));
-            textView.setY(50*((i/15)));
-        }
-        /*
-        findViewById(R.id.testInput1);
-
-        TextView textView = (TextView) findViewById(R.id.testInput1);
-        textView.setText("");
-        textView.setMaxWidth(20);
-        textView.setMaxHeight(45);
-        textView.setWidth(20);
-        textView.setX(50);
-        textView.setY(50);*/
         Intent i = new Intent(this, CrosswordActivity.class);
-        //i.putExtras(bundle);
+
         startActivity(i);/**/
     }
 
