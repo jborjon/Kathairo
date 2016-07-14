@@ -10,7 +10,9 @@ import java.util.List;
  * @version     1.6                 (current version number of program)
  * @since       1.2          (the version of the package this class was first added to)
  */
-public class Word {
+public class
+
+Word {
     /*
      * This is the clue the user will recevie it is an object
      */
@@ -33,9 +35,9 @@ public class Word {
     /****************************************************
      * Non-Default Constructor to set up everything
      *****************************************************/
-    protected Word(Clue clue, String answer, String clueNumber) {
+    protected Word(Clue clue, String answer, String clueNumber, int row, int column) {
         this.clue = clue;
-        this.setAnswer(answer);
+        this.setAnswer(answer, row, column);
         this.clueNumber = clueNumber;
         //this.setClueNumber(clueNumber);
     }
@@ -71,11 +73,13 @@ public class Word {
      * @return nothing
      *****************************************************/
 
-    public void setAnswer(String answerToSet){
+    public void setAnswer(String answerToSet, int row, int column){
             for (int i = 0; i < answerToSet.length(); i++) {
                 CharacterCell cell = new CharacterCell();
                 cell.setCharacter("" + answerToSet.charAt(i));
                 cell.setIndex(i);
+                cell.setRow(row);
+                cell.setColumn(column);
                 numberofLettersInAnswer = i + 1;
                 answer.add(cell);
             }
