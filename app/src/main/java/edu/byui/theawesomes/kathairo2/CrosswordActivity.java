@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
@@ -170,6 +171,7 @@ public class CrosswordActivity extends AppCompatActivity {
                 //then we have it loop and fill out all the rest of the word and then going back
                 //no I don't think this will work I will leave it hear in case we want to do it later though
                 if(validInput[r][c] == true){
+                    assert textView != null;
                     textView.setEnabled(Boolean.TRUE);
                     textView.setBackgroundColor(Color.WHITE);
                     textView.setTextColor(Color.BLACK);
@@ -188,6 +190,7 @@ public class CrosswordActivity extends AppCompatActivity {
                             return false;
                         }
                     });
+
                 }
 /**/
             }
