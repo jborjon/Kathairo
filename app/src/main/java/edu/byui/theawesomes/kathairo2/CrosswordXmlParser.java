@@ -71,8 +71,17 @@ public class CrosswordXmlParser {
             } else if (name.equals("clue")) {
                 word.setClue(readText(parser));
             } else if (name.equals("clueNumber")) {
-                word.setClueNumber(readText(parser));
-            } else {
+                word.setClueNumber(readNumber(parser));
+            } else if (name.equals("row")) {
+                word.setRow(readNumber(parser));
+                assert (word.getRow() != -1);
+            } else if(name.equals("column")) {
+                word.setCol(readNumber(parser));
+                assert (word.getCol() != -1);
+            } else if(name.equals("direction")) {
+                word.setIsDown(readBoolean(parser));
+            }
+            else {
                 skip(parser);
             }
         }
@@ -89,6 +98,116 @@ public class CrosswordXmlParser {
         return result;
     }
 
+    //
+    private Boolean readBoolean(XmlPullParser parser) throws IOException, XmlPullParserException {
+        String text = "";
+        Boolean result = false;
+        if (parser.next() == XmlPullParser.TEXT) {
+            text = parser.getText();
+            parser.nextTag();
+        }
+        switch (text) {
+            case "across":
+                result = false;
+                break;
+            case "down":
+                result = true;
+                break;
+            default:
+                result = false;
+                break;
+        }
+        return result;
+    }
+
+        //for the numbers convert string into number
+    private int readNumber(XmlPullParser parser) throws IOException, XmlPullParserException {
+        String text = "";
+        int result = 0;
+        if (parser.next() == XmlPullParser.TEXT) {
+            text = parser.getText();
+            parser.nextTag();
+        }
+
+        switch (text){
+            case "0":
+                result = 0;
+                break;
+            case "1":
+                result = 1;
+                break;
+            case "2":
+                result = 2;
+                break;
+            case "3":
+                result = 3;
+                break;
+            case "4":
+                result = 4;
+                break;
+            case "5":
+                result = 5;
+                break;
+            case "6":
+                result = 6;
+                break;
+            case "7":
+                result = 7;
+                break;
+            case "8":
+                result = 8;
+                break;
+            case "9":
+                result = 9;
+                break;
+            case "10":
+                result = 10;
+                break;
+            case "11":
+                result = 11;
+                break;
+            case "12":
+                result = 12;
+                break;
+            case "13":
+                result = 13;
+                break;
+            case "14":
+                result = 14;
+                break;
+            case "15":
+                result = 15;
+                break;
+            case "16":
+                result = 16;
+                break;
+            case "17":
+                result = 17;
+                break;
+            case "18":
+                result = 18;
+                break;
+            case "19":
+                result = 19;
+                break;
+            case "20":
+                result = 20;
+                break;
+            case "21":
+                result = 21;
+                break;
+            case "22":
+                result = 22;
+                break;
+            case "23":
+                result = 23;
+                break;
+            default:
+                result = -1;
+                break;
+        }
+        return result;
+    }
     private void skip(XmlPullParser parser) throws XmlPullParserException, IOException {
         if (parser.getEventType() != XmlPullParser.START_TAG) {
             throw new IllegalStateException();

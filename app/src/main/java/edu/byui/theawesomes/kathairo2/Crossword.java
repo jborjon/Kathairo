@@ -34,7 +34,7 @@ public class Crossword {
      * @param clueNumber int The position of the word
      * @return Um...nothing. That's what 'void' means.
      *****************************************************/
-    public void addWord(String answerToSet, String clueNumber){
+    public void addWord(String answerToSet, int clueNumber){
         Word toAdd = new Word();
         toAdd.setAnswer(answerToSet);
         toAdd.setClueNumber(clueNumber);

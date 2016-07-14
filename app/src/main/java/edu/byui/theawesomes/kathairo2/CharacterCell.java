@@ -15,7 +15,7 @@ public class CharacterCell {
     /*****************************************************
      * this is to keep track of where the index is
      ******************************************************/
-    private int index;
+    private int index;  // perhaps having a row and a collum for this?
 
     /****************************************************
      * Sets a character in the cell.

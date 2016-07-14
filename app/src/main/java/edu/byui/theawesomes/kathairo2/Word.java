@@ -28,12 +28,17 @@ public class Word {
     /*
      * this is the clue number within the list of clues
      */
-    private String clueNumber;
+    private int clueNumber;
 
+    private int row;
+
+    private int col;
+
+    private boolean isDown;
     /****************************************************
      * Non-Default Constructor to set up everything
      *****************************************************/
-    protected Word(Clue clue, String answer, String clueNumber) {
+    protected Word(Clue clue, String answer, int clueNumber) {
         this.clue = clue;
         this.setAnswer(answer);
         this.clueNumber = clueNumber;
@@ -45,7 +50,7 @@ public class Word {
      *****************************************************/
     protected Word() {
         this.clue = new Clue();
-        this.setClueNumber(null);
+        this.setClueNumber(0);
     }
 
     public String getLetter(int index){
@@ -82,16 +87,24 @@ public class Word {
             Log.i("setWord", "Word set");
     }
 
+    public void setRow(int intToSet) {this.row = intToSet;}
+    public void setCol(int intToSet) {this.col = intToSet;}
+    public void setIsDown(Boolean boolToSet) {this.isDown = boolToSet;}
+
+    public int getRow() {return this.row;}
+    public int getCol() {return this.col;}
+    public boolean getIsDown() {return this.isDown;}
+
     /****************************************************
-     *This get's the word
-     * <p>
-     *  This gets the word for the user to use
-     *
-     * </p>
-     *
-     *
-     * @return String completeWord
-     *****************************************************/
+         *This get's the word
+         * <p>
+         *  This gets the word for the user to use
+         *
+         * </p>
+         *
+         *
+         * @return String completeWord
+         *****************************************************/
     public String getAnswer(){
 
         String completeAnswer = "";
@@ -118,7 +131,7 @@ public class Word {
      * @param index
      * @return void
      *****************************************************/
-    public void setClueNumber(String index){
+    public void setClueNumber(int index){
         clueNumber = index;
     }
 
@@ -127,7 +140,7 @@ public class Word {
      * @param
      * @return String clueNumber
      *****************************************************/
-    public String getClueNumber(){
+    public int getClueNumber(){
         return clueNumber;
     }
 

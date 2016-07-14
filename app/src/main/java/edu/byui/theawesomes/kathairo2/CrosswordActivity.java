@@ -36,7 +36,7 @@ public class CrosswordActivity extends AppCompatActivity {
     //don't have answer
     //Numbers on the crossword
     //reset letter on click
-    //
+    // perhaps add a highlighted yellow when it's selected and then change it when it goes away?
 
 
     //Which of these are valid?
@@ -158,7 +158,10 @@ public class CrosswordActivity extends AppCompatActivity {
                 EditText textView = (EditText) findViewById(resID);
 
                 formatTextBoxes(textView,r,c);
-
+                //once we get the crossword in we can check to see if the rows match up
+                //if((crossswordList.get(i).getRow() == r &&  crossswordList.get(i).getRow() == c))
+                //then we have it loop and fill out all the rest of the word and then going back
+                //no I don't think this will work I will leave it hear in case we want to do it later though
                 if(validInput[r][c] == true){
                     textView.setEnabled(Boolean.TRUE);
                     textView.setBackgroundColor(Color.WHITE);
@@ -208,6 +211,8 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
     public void setValidAnswers(){
+
+
         // Row 1
         validAnswer[1][7] = 'C';
 

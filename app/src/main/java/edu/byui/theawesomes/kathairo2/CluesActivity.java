@@ -61,29 +61,28 @@ public class CluesActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    protected void displayClues(Crossword crosswordDown) {
+    protected void displayClues(Crossword crosswordWord) {
 
         //Declare the variables they will be stored in
-        List<Word> downClues = new ArrayList<Word>();
-//        List<Word> acrossClues = new ArrayList<>();
+        List<Word> crossswordList = new ArrayList<Word>();
 
-        //set the variables
-        downClues = crosswordDown.getCrosswordList();
-//        acrossClues = crossWordAcross.getCrosswordList();
+        crossswordList = crosswordWord.getCrosswordList();
 
         // Get the appropriate text field
         TextView cluesTextField = (TextView) findViewById(R.id.cluesList);
 
         // Put the down clues on the screen
         cluesTextField.append("Down:" + "\n");
-        for (int i = 0; i < downClues.size(); ++i) {
+        for (int i = 0; i < crossswordList.size(); ++i) {
             //Put the clue number in text
-            cluesTextField.append(downClues.get(i).getClueNumber()+". ");
-            //put the Clue in the text
-            cluesTextField.append(downClues.get(i).getClue()+"\n");
-            //put the amount of letters in the answer
-//            cluesTextField.append("("+downClues.get(i).getNumberOfLettersInAnswer()+" letters)"+"\n");
-            cluesTextField.append(downClues.get(i).getAnswer()+" "+ downClues.get(i).getNumberOfLettersInAnswer()+"\n");
+            if(crossswordList.get(i).getIsDown()) {
+
+                cluesTextField.append(crossswordList.get(i).getClueNumber() + ". ");
+                //put the Clue in the text
+                cluesTextField.append(crossswordList.get(i).getClue() + " " + crossswordList.get(i).getNumberOfLettersInAnswer() + "\n");
+                //Debug informations
+                cluesTextField.append(crossswordList.get(i).getAnswer() + " row: "+ crossswordList.get(i).getRow() + " col: "+ crossswordList.get(i).getCol() + "\n");
+            }
         }
 
         //add a space in between the two
@@ -91,13 +90,15 @@ public class CluesActivity extends AppCompatActivity {
 
         // Put the across clues on the screen
         cluesTextField.append("Across:" + "\n");
-//        for (int i = 0; i < acrossClues.size(); ++i) {
+        for (int i = 0; i < crossswordList.size(); ++i) {
             //Put the clue number in text
-            //cluesTextField.append(Integer.toString(acrossClues.get(i).getNumberOfTheWord())+". ");
-            //put the Clue in the text
-            //cluesTextField.append(acrossClues.get(i).getWord());
-            //put the amount of letters in the answer
-            //cluesTextField.append("("+acrossClues.get(i).getNumberOfCharactersInTheWord()+" letters)"+"\n");
-//        }
+            if(!(crossswordList.get(i).getIsDown())) {
+                cluesTextField.append(crossswordList.get(i).getClueNumber() + ". ");
+                //put the Clue in the text
+                cluesTextField.append(crossswordList.get(i).getClue() + "\n");
+                //Debug information
+                cluesTextField.append(crossswordList.get(i).getAnswer() + " " + crossswordList.get(i).getNumberOfLettersInAnswer() + "\n");
+            }
+        }
     }
 }
