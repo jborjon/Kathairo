@@ -14,6 +14,8 @@ public class Crossword {
      */
     private List<Word> crossword = new ArrayList<Word>();
 
+
+
     /****************************************************
      * Default Constructor just needs to be protected
      *****************************************************/
@@ -39,8 +41,8 @@ public class Crossword {
         crossword.add(toAdd);
     }
 
-    /****************************************************
-     * Returns all the words in the crossword puzzle.*
+    /**********************************************************
+     * Returns all the words in the crossword puzzle.         *
      * @return A list of all the words in the crossword puzzle*
      *****************************************************/
     public List<Word> getCrosswordList(){
@@ -59,4 +61,6 @@ public class Crossword {
     public void addWordObject(Word toSet){
         crossword.add(toSet);
     }
+
+
 }

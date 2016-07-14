@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:columnCount="23"
-        android:rowCount="18"
+        android:rowCount="17"
         android:layout_marginTop="46dp">
 
         <EditText
@@ -28,8 +28,7 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"
-            android:textSize="20dp"
-            android:inputType="text" />
+            android:textSize="20dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -41,7 +40,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
-            android:inputType="text" />
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -237,7 +236,7 @@
 
 
 
-        // ROW 2
+        <!-- Row 2 -->
 
         <EditText
             android:layout_width="wrap_content"
@@ -451,38 +450,2827 @@
             android:layout_row="2"
             android:layout_column="21"
             android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+
+        <!-- Row 3 -->
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r3c1"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r3c2"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r3c3"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r3c4"
+            android:layout_row="3"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r3c5"
+            android:layout_row="3"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r3c6"
+            android:layout_row="3"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r3c7"
+            android:layout_row="3"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r3c8"
+            android:layout_row="3"
+            android:layout_column="8"
+            android:background="#30f100"
 
             android:layout_margin="2dp"/>
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/r5c5"
-            android:layout_row="16"
-            android:layout_column="7"
             android:text="H"
-            android:inputType="none" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/r5c7"
-            android:layout_row="17"
-            android:layout_column="8"
-            android:text="H"
-            android:inputType="none" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/r5c8"
-            android:layout_row="17"
+            android:id="@+id/r3c9"
+            android:layout_row="3"
             android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r3c10"
+            android:layout_row="3"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="H"
-            android:inputType="number" />
+            android:id="@+id/r3c11"
+            android:layout_row="3"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r3c12"
+            android:layout_row="3"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r3c13"
+            android:layout_row="3"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r3c14"
+            android:layout_row="3"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r3c15"
+            android:layout_row="3"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r3c16"
+            android:layout_row="3"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r3c17"
+            android:layout_row="3"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r3c18"
+            android:layout_row="3"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r3c19"
+            android:layout_row="3"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r3c20"
+            android:layout_row="3"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r3c21"
+            android:layout_row="3"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+        <!-- row 4-->
 
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r4c1"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r4c2"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r4c3"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r4c4"
+            android:layout_row="4"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r4c5"
+            android:layout_row="4"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r4c6"
+            android:layout_row="4"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r4c7"
+            android:layout_row="4"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r4c8"
+            android:layout_row="4"
+            android:layout_column="8"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r4c9"
+            android:layout_row="4"
+            android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r4c10"
+            android:layout_row="4"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r4c11"
+            android:layout_row="4"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r4c12"
+            android:layout_row="4"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r4c13"
+            android:layout_row="4"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r4c14"
+            android:layout_row="4"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r4c15"
+            android:layout_row="4"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r4c16"
+            android:layout_row="4"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r4c17"
+            android:layout_row="4"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r4c18"
+            android:layout_row="4"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r4c19"
+            android:layout_row="4"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r4c20"
+            android:layout_row="4"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r4c21"
+            android:layout_row="4"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+        <!-- row 5 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r5c1"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r5c2"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r5c3"
+            android:layout_row="5"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r5c4"
+            android:layout_row="5"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r5c5"
+            android:layout_row="5"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r5c6"
+            android:layout_row="5"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r5c7"
+            android:layout_row="5"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r5c8"
+            android:layout_row="5"
+            android:layout_column="8"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r5c9"
+            android:layout_row="5"
+            android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r5c10"
+            android:layout_row="5"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r5c11"
+            android:layout_row="5"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r5c12"
+            android:layout_row="5"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r5c13"
+            android:layout_row="5"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r5c14"
+            android:layout_row="5"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r5c15"
+            android:layout_row="5"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r5c16"
+            android:layout_row="5"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r5c17"
+            android:layout_row="5"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r5c18"
+            android:layout_row="5"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r5c19"
+            android:layout_row="5"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r5c20"
+            android:layout_row="5"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r5c21"
+            android:layout_row="5"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+        <!-- row 6 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r6c1"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r6c2"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r6c3"
+            android:layout_row="6"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r6c4"
+            android:layout_row="6"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r6c5"
+            android:layout_row="6"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r6c6"
+            android:layout_row="6"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r6c7"
+            android:layout_row="6"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r6c8"
+            android:layout_row="6"
+            android:layout_column="8"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r6c9"
+            android:layout_row="6"
+            android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r6c10"
+            android:layout_row="6"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r6c11"
+            android:layout_row="6"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r6c12"
+            android:layout_row="6"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r6c13"
+            android:layout_row="6"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r6c14"
+            android:layout_row="6"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r6c15"
+            android:layout_row="6"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r6c16"
+            android:layout_row="6"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r6c17"
+            android:layout_row="6"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r6c18"
+            android:layout_row="6"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r6c19"
+            android:layout_row="6"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r6c20"
+            android:layout_row="6"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r6c21"
+            android:layout_row="6"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+        <!-- row 7 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r7c1"
+            android:layout_row="7"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r7c2"
+            android:layout_row="7"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r7c3"
+            android:layout_row="7"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r7c4"
+            android:layout_row="7"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r7c5"
+            android:layout_row="7"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r7c6"
+            android:layout_row="7"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r7c7"
+            android:layout_row="7"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r7c8"
+            android:layout_row="7"
+            android:layout_column="8"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r7c9"
+            android:layout_row="7"
+            android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r7c10"
+            android:layout_row="7"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r7c11"
+            android:layout_row="7"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r7c12"
+            android:layout_row="7"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r7c13"
+            android:layout_row="7"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r7c14"
+            android:layout_row="7"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r7c15"
+            android:layout_row="7"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r7c16"
+            android:layout_row="7"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r7c17"
+            android:layout_row="7"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r7c18"
+            android:layout_row="7"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r7c19"
+            android:layout_row="7"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r7c20"
+            android:layout_row="7"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r7c21"
+            android:layout_row="7"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+        <!-- row 8 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r8c1"
+            android:layout_row="8"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r8c2"
+            android:layout_row="8"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r8c3"
+            android:layout_row="8"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r8c4"
+            android:layout_row="8"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r8c5"
+            android:layout_row="8"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r8c6"
+            android:layout_row="8"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r8c7"
+            android:layout_row="8"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r8c8"
+            android:layout_row="8"
+            android:layout_column="8"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r8c9"
+            android:layout_row="8"
+            android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r8c10"
+            android:layout_row="8"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r8c11"
+            android:layout_row="8"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r8c12"
+            android:layout_row="8"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r8c13"
+            android:layout_row="8"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r8c14"
+            android:layout_row="8"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r8c15"
+            android:layout_row="8"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r8c16"
+            android:layout_row="8"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r8c17"
+            android:layout_row="8"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r8c18"
+            android:layout_row="8"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r8c19"
+            android:layout_row="8"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r8c20"
+            android:layout_row="8"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r8c21"
+            android:layout_row="8"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+        <!-- row 9 -->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r9c1"
+            android:layout_row="9"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r9c2"
+            android:layout_row="9"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r9c3"
+            android:layout_row="9"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r9c4"
+            android:layout_row="9"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r9c5"
+            android:layout_row="9"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r9c6"
+            android:layout_row="9"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r9c7"
+            android:layout_row="9"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r9c8"
+            android:layout_row="9"
+            android:layout_column="8"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r9c9"
+            android:layout_row="9"
+            android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r9c10"
+            android:layout_row="9"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r9c11"
+            android:layout_row="9"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r9c12"
+            android:layout_row="9"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r9c13"
+            android:layout_row="9"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r9c14"
+            android:layout_row="9"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r9c15"
+            android:layout_row="9"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r9c16"
+            android:layout_row="9"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r9c17"
+            android:layout_row="9"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r9c18"
+            android:layout_row="9"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r9c19"
+            android:layout_row="9"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r9c20"
+            android:layout_row="9"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r9c21"
+            android:layout_row="9"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+        <!-- row 10 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r10c1"
+            android:layout_row="10"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r10c2"
+            android:layout_row="10"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r10c3"
+            android:layout_row="10"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r10c4"
+            android:layout_row="10"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r10c5"
+            android:layout_row="10"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r10c6"
+            android:layout_row="10"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r10c7"
+            android:layout_row="10"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r10c8"
+            android:layout_row="10"
+            android:layout_column="8"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r10c9"
+            android:layout_row="10"
+            android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r10c10"
+            android:layout_row="10"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r10c11"
+            android:layout_row="10"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r10c12"
+            android:layout_row="10"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r10c13"
+            android:layout_row="10"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r10c14"
+            android:layout_row="10"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r10c15"
+            android:layout_row="10"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r10c16"
+            android:layout_row="10"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r10c17"
+            android:layout_row="10"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r10c18"
+            android:layout_row="10"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r10c19"
+            android:layout_row="10"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r10c20"
+            android:layout_row="10"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r10c21"
+            android:layout_row="10"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+        <!-- row 11 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r11c1"
+            android:layout_row="11"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r11c2"
+            android:layout_row="11"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r11c3"
+            android:layout_row="11"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r11c4"
+            android:layout_row="11"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r11c5"
+            android:layout_row="11"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r11c6"
+            android:layout_row="11"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r11c7"
+            android:layout_row="11"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r11c8"
+            android:layout_row="11"
+            android:layout_column="8"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r11c9"
+            android:layout_row="11"
+            android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r11c10"
+            android:layout_row="11"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r11c11"
+            android:layout_row="11"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r11c12"
+            android:layout_row="11"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r11c13"
+            android:layout_row="11"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r11c14"
+            android:layout_row="11"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r11c15"
+            android:layout_row="11"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r11c16"
+            android:layout_row="11"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r11c17"
+            android:layout_row="11"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r11c18"
+            android:layout_row="11"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r11c19"
+            android:layout_row="11"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r11c20"
+            android:layout_row="11"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r11c21"
+            android:layout_row="11"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+        <!-- row 12 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r12c1"
+            android:layout_row="12"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r12c2"
+            android:layout_row="12"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r12c3"
+            android:layout_row="12"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r12c4"
+            android:layout_row="12"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r12c5"
+            android:layout_row="12"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r12c6"
+            android:layout_row="12"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r12c7"
+            android:layout_row="12"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r12c8"
+            android:layout_row="12"
+            android:layout_column="8"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r12c9"
+            android:layout_row="12"
+            android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r12c10"
+            android:layout_row="12"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r12c11"
+            android:layout_row="12"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r12c12"
+            android:layout_row="12"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r12c13"
+            android:layout_row="12"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r12c14"
+            android:layout_row="12"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r12c15"
+            android:layout_row="12"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r12c16"
+            android:layout_row="12"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r12c17"
+            android:layout_row="12"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r12c18"
+            android:layout_row="12"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r12c19"
+            android:layout_row="12"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r12c20"
+            android:layout_row="12"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r12c21"
+            android:layout_row="12"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+        <!-- row 13-->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r13c1"
+            android:layout_row="13"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r13c2"
+            android:layout_row="13"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r13c3"
+            android:layout_row="13"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r13c4"
+            android:layout_row="13"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r13c5"
+            android:layout_row="13"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r13c6"
+            android:layout_row="13"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r13c7"
+            android:layout_row="13"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r13c8"
+            android:layout_row="13"
+            android:layout_column="8"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r13c9"
+            android:layout_row="13"
+            android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r13c10"
+            android:layout_row="13"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r13c11"
+            android:layout_row="13"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r13c12"
+            android:layout_row="13"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r13c13"
+            android:layout_row="13"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r13c14"
+            android:layout_row="13"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r13c15"
+            android:layout_row="13"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r13c16"
+            android:layout_row="13"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r13c17"
+            android:layout_row="13"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r13c18"
+            android:layout_row="13"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r13c19"
+            android:layout_row="13"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r13c20"
+            android:layout_row="13"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r13c21"
+            android:layout_row="13"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+        <!-- row 14 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r14c1"
+            android:layout_row="14"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r14c2"
+            android:layout_row="14"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r14c3"
+            android:layout_row="14"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r14c4"
+            android:layout_row="14"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r14c5"
+            android:layout_row="14"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r14c6"
+            android:layout_row="14"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r14c7"
+            android:layout_row="14"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r14c8"
+            android:layout_row="14"
+            android:layout_column="8"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r14c9"
+            android:layout_row="14"
+            android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r14c10"
+            android:layout_row="14"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r14c11"
+            android:layout_row="14"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r14c12"
+            android:layout_row="14"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r14c13"
+            android:layout_row="14"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r14c14"
+            android:layout_row="14"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r14c15"
+            android:layout_row="14"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r14c16"
+            android:layout_row="14"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r14c17"
+            android:layout_row="14"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r14c18"
+            android:layout_row="14"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r14c19"
+            android:layout_row="14"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r14c20"
+            android:layout_row="14"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r14c21"
+            android:layout_row="14"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
+
+        <!-- row 15 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r15c1"
+            android:layout_row="15"
+            android:layout_column="1"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r15c2"
+            android:layout_row="15"
+            android:layout_column="2"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r15c3"
+            android:layout_row="15"
+            android:layout_column="3"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r15c4"
+            android:layout_row="15"
+            android:layout_column="4"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r15c5"
+            android:layout_row="15"
+            android:layout_column="5"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r15c6"
+            android:layout_row="15"
+            android:layout_column="6"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r15c7"
+            android:layout_row="15"
+            android:layout_column="7"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r15c8"
+            android:layout_row="15"
+            android:layout_column="8"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r15c9"
+            android:layout_row="15"
+            android:layout_column="9"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r15c10"
+            android:layout_row="15"
+            android:layout_column="10"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r15c11"
+            android:layout_row="15"
+            android:layout_column="11"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r15c12"
+            android:layout_row="15"
+            android:layout_column="12"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r15c13"
+            android:layout_row="15"
+            android:layout_column="13"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r15c14"
+            android:layout_row="15"
+            android:layout_column="14"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r15c15"
+            android:layout_row="15"
+            android:layout_column="15"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r15c16"
+            android:layout_row="15"
+            android:layout_column="16"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r15c17"
+            android:layout_row="15"
+            android:layout_column="17"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r15c18"
+            android:layout_row="15"
+            android:layout_column="18"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r15c19"
+            android:layout_row="15"
+            android:layout_column="19"
+            android:background="#f0f656"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:id="@+id/r15c20"
+            android:layout_row="15"
+            android:layout_column="20"
+            android:background="#30f100"
+
+            android:layout_margin="2dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:id="@+id/r15c21"
+            android:layout_row="15"
+            android:layout_column="21"
+            android:background="#f0f656"
+            android:layout_margin="2dp"/>
     </GridLayout>
+    
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
