@@ -28,7 +28,9 @@
             android:background="#f0f656"
 
             android:layout_margin="2dp"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+                        android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -40,6 +42,7 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+                        android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -50,7 +53,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,7 +65,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,7 +77,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,7 +89,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,7 +101,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -100,7 +113,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -111,7 +126,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -122,7 +139,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -132,7 +151,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -142,7 +163,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -152,7 +175,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -162,7 +187,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -172,7 +199,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -182,7 +211,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -192,7 +223,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -202,7 +235,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -212,7 +247,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -222,7 +259,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -232,7 +271,9 @@
             android:layout_column="21"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
 
 
@@ -247,7 +288,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -259,6 +302,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -269,7 +314,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -279,7 +326,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -289,7 +338,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -299,7 +350,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -309,7 +362,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -319,7 +374,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -330,7 +387,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -341,7 +400,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -351,7 +412,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -361,7 +424,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -371,7 +436,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -381,7 +448,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -391,7 +460,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -401,7 +472,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -411,7 +484,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -421,7 +496,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -431,7 +508,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -441,7 +520,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -450,7 +531,9 @@
             android:layout_row="2"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
 
         <!-- Row 3 -->
@@ -465,7 +548,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -477,6 +562,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -487,7 +574,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -497,7 +586,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -507,7 +598,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -517,7 +610,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -527,7 +622,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -537,7 +634,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -548,7 +647,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -559,7 +660,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -569,7 +672,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -579,7 +684,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -589,7 +696,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -599,7 +708,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -609,7 +720,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -619,7 +732,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -629,7 +744,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -639,7 +756,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -649,7 +768,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -659,7 +780,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -668,7 +791,9 @@
             android:layout_row="3"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <!-- row 4-->
 
@@ -682,7 +807,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -694,6 +821,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -704,7 +833,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -714,7 +845,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -724,7 +857,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -734,7 +869,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -744,7 +881,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -754,7 +893,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -765,7 +906,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -776,7 +919,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -786,7 +931,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -796,7 +943,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -806,7 +955,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -816,7 +967,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -826,7 +979,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -836,7 +991,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -846,7 +1003,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -856,7 +1015,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -866,7 +1027,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -876,7 +1039,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -885,7 +1050,9 @@
             android:layout_row="4"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <!-- row 5 -->
 
@@ -898,7 +1065,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -910,6 +1079,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -920,7 +1091,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -930,7 +1103,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -940,7 +1115,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -950,7 +1127,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -960,7 +1139,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -970,7 +1151,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -981,7 +1164,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -992,7 +1177,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1002,7 +1189,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1012,7 +1201,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1022,7 +1213,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1032,7 +1225,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1042,7 +1237,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1052,7 +1249,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1062,7 +1261,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1072,7 +1273,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1082,7 +1285,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1092,7 +1297,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1101,7 +1308,9 @@
             android:layout_row="5"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <!-- row 6 -->
 
@@ -1114,7 +1323,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1126,6 +1337,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -1136,7 +1349,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1146,7 +1361,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1156,7 +1373,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1166,7 +1385,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1176,7 +1397,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1186,7 +1409,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1197,7 +1422,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1208,7 +1435,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1218,7 +1447,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1228,7 +1459,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1238,7 +1471,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1248,7 +1483,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1258,7 +1495,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1268,7 +1507,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1278,7 +1519,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1288,7 +1531,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1298,7 +1543,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1308,7 +1555,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1317,7 +1566,9 @@
             android:layout_row="6"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <!-- row 7 -->
 
@@ -1330,7 +1581,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1342,6 +1595,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -1352,7 +1607,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1362,7 +1619,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1372,7 +1631,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1382,7 +1643,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1392,7 +1655,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1402,7 +1667,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1413,7 +1680,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1424,7 +1693,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1434,7 +1705,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1444,7 +1717,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1454,7 +1729,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1464,7 +1741,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1474,7 +1753,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1484,7 +1765,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1494,7 +1777,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1504,7 +1789,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1514,7 +1801,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1524,7 +1813,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1533,7 +1824,9 @@
             android:layout_row="7"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <!-- row 8 -->
 
@@ -1546,7 +1839,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1558,6 +1853,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -1568,7 +1865,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1578,7 +1877,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1588,7 +1889,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1598,7 +1901,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1608,7 +1913,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1618,7 +1925,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1629,7 +1938,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1640,7 +1951,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1650,7 +1963,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1660,7 +1975,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1670,7 +1987,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1680,7 +1999,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1690,7 +2011,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1700,7 +2023,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1710,7 +2035,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1720,7 +2047,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1730,7 +2059,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1740,7 +2071,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1749,7 +2082,9 @@
             android:layout_row="8"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <!-- row 9 -->
         <EditText
@@ -1761,7 +2096,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1773,6 +2110,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -1783,7 +2122,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1793,7 +2134,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1803,7 +2146,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1813,7 +2158,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1823,7 +2170,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1833,7 +2182,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1844,7 +2195,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1855,7 +2208,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1865,7 +2220,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1875,7 +2232,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1885,7 +2244,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1895,7 +2256,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1905,7 +2268,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1915,7 +2280,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1925,7 +2292,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1935,7 +2304,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1945,7 +2316,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1955,7 +2328,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -1964,7 +2339,9 @@
             android:layout_row="9"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <!-- row 10 -->
 
@@ -1977,7 +2354,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -1989,6 +2368,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -1999,7 +2380,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2009,7 +2392,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2019,7 +2404,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2029,7 +2416,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2039,7 +2428,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2049,7 +2440,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2060,7 +2453,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2071,7 +2466,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2081,7 +2478,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2091,7 +2490,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2101,7 +2502,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2111,7 +2514,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2121,7 +2526,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2131,7 +2538,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2141,7 +2550,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2151,7 +2562,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2161,7 +2574,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2171,7 +2586,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2180,7 +2597,9 @@
             android:layout_row="10"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <!-- row 11 -->
 
@@ -2193,7 +2612,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2205,6 +2626,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -2215,7 +2638,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2225,7 +2650,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2235,7 +2662,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2245,7 +2674,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2255,7 +2686,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2265,7 +2698,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2276,7 +2711,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2287,7 +2724,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2297,7 +2736,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2307,7 +2748,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2317,7 +2760,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2327,7 +2772,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2337,7 +2784,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2347,7 +2796,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2357,7 +2808,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2367,7 +2820,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2377,7 +2832,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2387,7 +2844,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2396,7 +2855,9 @@
             android:layout_row="11"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <!-- row 12 -->
 
@@ -2409,7 +2870,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2421,6 +2884,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -2431,7 +2896,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2441,7 +2908,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2452,7 +2921,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2463,7 +2934,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2473,7 +2946,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2483,7 +2958,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2494,7 +2971,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2505,7 +2984,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2515,7 +2996,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2525,7 +3008,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2535,7 +3020,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2545,7 +3032,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2555,7 +3044,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2565,7 +3056,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2575,7 +3068,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2585,7 +3080,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2595,7 +3092,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2605,7 +3104,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2614,7 +3115,9 @@
             android:layout_row="12"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <!-- row 13-->
 
@@ -2627,7 +3130,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2639,6 +3144,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -2649,7 +3156,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2659,7 +3168,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2670,7 +3181,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2681,7 +3194,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2691,7 +3206,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2701,7 +3218,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2712,7 +3231,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2723,7 +3244,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2733,7 +3256,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2743,7 +3268,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2753,7 +3280,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2763,7 +3292,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2773,7 +3304,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2783,7 +3316,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2793,7 +3328,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2803,7 +3340,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2813,7 +3352,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2823,7 +3364,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2832,7 +3375,9 @@
             android:layout_row="13"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <!-- row 14 -->
 
@@ -2845,7 +3390,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2857,6 +3404,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -2867,7 +3416,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2877,7 +3428,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2888,7 +3441,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2899,7 +3454,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2909,7 +3466,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2919,7 +3478,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2930,7 +3491,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -2941,7 +3504,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2951,7 +3516,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2961,7 +3528,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2971,7 +3540,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2981,7 +3552,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -2991,7 +3564,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3001,7 +3576,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3011,7 +3588,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3021,7 +3600,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3031,7 +3612,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3041,7 +3624,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3050,7 +3635,9 @@
             android:layout_row="14"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <!-- row 15 -->
 
@@ -3063,7 +3650,9 @@
             android:layout_column="1"
             android:background="#f0f656"
 
-            android:layout_margin="2dp" />
+            android:layout_margin="2dp" 
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -3075,6 +3664,8 @@
             android:background="#30f100"
 
             android:layout_margin="2dp"
+            
+            android:maxLength="1"
             />
         <EditText
             android:layout_width="wrap_content"
@@ -3085,7 +3676,9 @@
             android:layout_column="3"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3095,7 +3688,9 @@
             android:layout_column="4"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -3106,7 +3701,9 @@
             android:layout_column="5"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -3117,7 +3714,9 @@
             android:layout_column="6"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3127,7 +3726,9 @@
             android:layout_column="7"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3137,7 +3738,9 @@
             android:layout_column="8"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -3148,7 +3751,9 @@
             android:layout_column="9"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -3159,7 +3764,9 @@
             android:layout_column="10"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3169,7 +3776,9 @@
             android:layout_column="11"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3179,7 +3788,9 @@
             android:layout_column="12"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3189,7 +3800,9 @@
             android:layout_column="13"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3199,7 +3812,9 @@
             android:layout_column="14"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3209,7 +3824,9 @@
             android:layout_column="15"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3219,7 +3836,9 @@
             android:layout_column="16"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3229,7 +3848,9 @@
             android:layout_column="17"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3239,7 +3860,9 @@
             android:layout_column="18"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3249,7 +3872,9 @@
             android:layout_column="19"
             android:background="#f0f656"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3259,7 +3884,9 @@
             android:layout_column="20"
             android:background="#30f100"
 
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -3268,16 +3895,19 @@
             android:layout_row="15"
             android:layout_column="21"
             android:background="#f0f656"
-            android:layout_margin="2dp"/>
+            android:layout_margin="2dp"
+            android:maxLength="1"
+            />
     </GridLayout>
-    
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Puzzle"
         android:id="@+id/button2"
         android:layout_alignTop="@+id/button3"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+            />
 
     <Button
         android:layout_width="wrap_content"
@@ -3288,7 +3918,8 @@
         android:onClick="mainMenuOnClick"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+            />
 
     <Button
         android:layout_width="wrap_content"
@@ -3300,7 +3931,21 @@
         android:layout_marginStart="34dp"
         android:layout_alignTop="@+id/button2"
         android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2" />
+        android:layout_toEndOf="@+id/button2"
+            />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solved?"
+        android:id="@+id/checkIfSolved"
+        android:onClick="checkIfSolvedOnClick"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginStart="-100dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2"
+            />
 
 
 
