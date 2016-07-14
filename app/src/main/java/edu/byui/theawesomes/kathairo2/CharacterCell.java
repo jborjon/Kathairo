@@ -16,24 +16,6 @@ public class CharacterCell {
      * this is to keep track of where the index is
      ******************************************************/
     private int index;
-    private int r = 0;
-    private int c = 0;
-
-    public void setRow(int toSet){
-        this.r = toSet;
-    }
-
-    public void setColumn(int toSet){
-        this.c = toSet;
-    }
-
-    public int getRow(){
-        return this.r;
-    }
-
-    public int getColumn(){
-        return this.c;
-    }
 
     /****************************************************
      * Sets a character in the cell.
