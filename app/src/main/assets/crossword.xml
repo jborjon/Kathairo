@@ -25,7 +25,7 @@
             <answer type = "text">simplecomplex</answer>
             <clueNumber type = "text">5</clueNumber><!-- try to make this a int -->
         </Word>
-        <Word>tytytymm ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+        <Word>
             <clue type = "text">You can often times dance to this kind of music</clue>
             <answer type = "text">contemporary</answer>
             <clueNumber type = "text">6</clueNumber><!-- try to make this a int -->

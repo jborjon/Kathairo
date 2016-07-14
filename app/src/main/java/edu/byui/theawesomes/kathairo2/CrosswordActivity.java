@@ -1,22 +1,19 @@
 package edu.byui.theawesomes.kathairo2;
 
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.Chronometer;
 
 import org.w3c.dom.Text;
 
@@ -29,19 +26,12 @@ public class CrosswordActivity extends AppCompatActivity {
     //Setting the background to black for nonediitable and white for editiable
     //
 
-
-    //Add the to upper function
-    // back button to the clues
-    // make the clues bigger
-    //don't have answer
-    //Numbers on the crossword
-    //reset letter on click
-    //
-
+    // The timer!
+    Chronometer timer;
 
     //Which of these are valid?
     Boolean[][] validInput = new Boolean[16][22];
-    Character[][] validAnswer = new Character[16][22];
+    Character[][] solvedCrossword = new Character[16][22];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +41,17 @@ public class CrosswordActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Associate the chronometer with the on-page timer
+        timer = (Chronometer) findViewById(R.id.puzzleTimer);
+
         Word test = new Word();
 
         setCrosswordValidInput();
         setCrosswordTextBoxes();
-        setValidAnswers();
+
+        // Start the timer
+        timer.start();
+
     }
 
     public void mainMenuOnClick(View v){
@@ -66,69 +62,17 @@ public class CrosswordActivity extends AppCompatActivity {
 
     public void checkIfSolvedOnClick(View v) {
         //checks if it's solved
-        Boolean isSolved = Boolean.TRUE;
-        for (int r = 1; r <= 15; r++) {
+        for (int r = 1; r <= 2; r++) {
             for (int c = 1; c <= 21; c++) {
-                if (validInput[r][c] == true) {
+                if(validInput[r][c] == true) {
                     String buttonID = "r" + r + "c" + c;
                     int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                     EditText textView = (EditText) findViewById(resID);
-                    if (!((textView.getText().toString().toUpperCase()).equals(Character.toString(validAnswer[r][c])))) {
-                    isSolved = false;
-                        textView.setBackgroundColor(Color.RED);
-                        textView.setText("");
-                    }
-                    else{
-                        textView.setBackgroundColor(Color.GREEN);
-                    }
+                    if(textView.getText().toString().equals("d")){
 
+                    }
                 }
             }
-        }
-
-        if(isSolved == true){
-            AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
-            builder1.setMessage("Congratualtions you finished!");
-            builder1.setCancelable(true);
-
-            builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    dialog.cancel();
-                }
-            });
-            //for when we have the play again option
-            /*
-            builder1.setPositiveButton(
-                    "Yes",
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            dialog.cancel();
-                        }
-                    });
-
-            builder1.setNegativeButton(
-                    "No",
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            dialog.cancel();
-                        }
-                    });
-            */
-            AlertDialog alert11 = builder1.create();
-            alert11.show();
-        }
-        else {
-            AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
-            builder1.setMessage("Sorry you aren't quite done yet!");
-            builder1.setCancelable(true);
-
-            builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    dialog.cancel();
-                }
-            });
-            AlertDialog alert11 = builder1.create();
-            alert11.show();
         }
     }
 
@@ -142,7 +86,7 @@ public class CrosswordActivity extends AppCompatActivity {
     public void cluesOnClick(View v){
 
 
-
+        /*
         Intent i = new Intent(this, CluesActivity.class);
         //i.putExtras(bundle);
         startActivity(i);
@@ -150,11 +94,11 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
     public void setCrosswordTextBoxes(){
-        validAnswer[1][7] = 'C';
+        solvedCrossword[1][7] = 'C';
         for(int r = 1; r <= 15; r++) {
             for (int c = 1; c <= 21; c++) {
                 String buttonID = "r" + r + "c" + c;
-                final int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
+                int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                 EditText textView = (EditText) findViewById(resID);
 
                 formatTextBoxes(textView,r,c);
@@ -163,29 +107,12 @@ public class CrosswordActivity extends AppCompatActivity {
                     textView.setEnabled(Boolean.TRUE);
                     textView.setBackgroundColor(Color.WHITE);
                     textView.setTextColor(Color.BLACK);
-                    textView.setText("");
-                    final TextView buttonT = (TextView) findViewById(resID);
-                    final int finalC = c;
-                    final int finalR = r;
-                    buttonT.setOnTouchListener(new View.OnTouchListener() {
-                        @Override
-                        public boolean onTouch(View v, MotionEvent event) {
-                            TextView textView = (TextView) findViewById(resID);
-                            if (!((textView.getText().toString().toUpperCase()).equals(Character.toString(validAnswer[finalR][finalC])))) {
-                                textView.setBackgroundColor(Color.WHITE);
-                                textView.setText("");
-                            }
-                            return false;
-                        }
-                    });
+
+                    textView.setText("E");
                 }
 /**/
             }
         }
-    }
-
-    public void formatNumberBoxes(TextView textView, int count){
-        textView.setText(Integer.toString(count));
     }
 
     public void formatTextBoxes(TextView textView, int r, int c){
@@ -205,116 +132,6 @@ public class CrosswordActivity extends AppCompatActivity {
         textView.setY(r);
         textView.setTextSize(40);
         textView.setEnabled(Boolean.FALSE);
-    }
-
-    public void setValidAnswers(){
-        // Row 1
-        validAnswer[1][7] = 'C';
-
-
-        // Row 2
-        validAnswer[2][7] = 'O';
-        validAnswer[2][8] = 'F';
-        validAnswer[2][9] = 'T';
-        validAnswer[2][10] = 'E';
-        validAnswer[2][11] = 'N';
-
-        // Row 3
-        validAnswer[3][7] = 'N';
-        validAnswer[3][13] = 'S';
-
-        // Row 4
-        validAnswer[4][1] = 'P';
-        validAnswer[4][2] = 'E';
-        validAnswer[4][3] = 'R';
-        validAnswer[4][4] = 'F';
-        validAnswer[4][5] = 'E';
-        validAnswer[4][6] = 'C';
-        validAnswer[4][7] = 'T';
-        validAnswer[4][8] = 'P';
-        validAnswer[4][9] = 'R';
-        validAnswer[4][10] = 'A';
-        validAnswer[4][11] = 'C';
-        validAnswer[4][12] = 'T';
-        validAnswer[4][13] = 'I';
-        validAnswer[4][14] = 'C';
-        validAnswer[4][15] = 'E';
-
-        // Row 5
-        validAnswer[5][7] = 'E';
-        validAnswer[5][13] = 'M';
-
-        // Row 6
-        validAnswer[6][4] = 'D';
-        validAnswer[6][7] = 'M';
-        validAnswer[6][13] = 'P';
-        validAnswer[6][18] = 'U';
-
-        // Row 7
-        validAnswer[7][4] = 'E';
-        validAnswer[7][7] = 'P';
-        validAnswer[7][11] = 'W';
-        validAnswer[7][12] = 'I';
-        validAnswer[7][13] = 'L';
-        validAnswer[7][14] = 'L';
-        validAnswer[7][15] = 'I';
-        validAnswer[7][16] = 'N';
-        validAnswer[7][17] = 'G';
-        validAnswer[7][18] = 'N';
-        validAnswer[7][19] = 'E';
-        validAnswer[7][20] = 'S';
-        validAnswer[7][21] = 'S';
-
-        // Row 8
-        validAnswer[8][4] = 'A';
-        validAnswer[8][7] = 'O';
-        validAnswer[8][13] = 'E';
-        validAnswer[8][16] = 'O';
-        validAnswer[8][18] = 'E';
-
-        // Row 9
-        validAnswer[9][4] = 'T';
-        validAnswer[9][7] = 'R';
-        validAnswer[9][13] = 'C';
-        validAnswer[9][18] = 'E';
-
-        // Row 10
-        validAnswer[10][4] = 'H';
-        validAnswer[10][5] = 'U';
-        validAnswer[10][6] = 'M';
-        validAnswer[10][7] = 'A';
-        validAnswer[10][8] = 'N';
-        validAnswer[10][9] = 'S';
-        validAnswer[10][13] = 'O';
-        validAnswer[10][18] = 'D';
-
-        // Row 11
-        validAnswer[11][7] = 'R';
-        validAnswer[11][13] = 'M';
-        validAnswer[11][18] = 'E';
-
-        // Row 12
-        validAnswer[12][5] = 'R';
-        validAnswer[12][6] = 'H';
-        validAnswer[12][7] = 'Y';
-        validAnswer[12][8] = 'T';
-        validAnswer[12][9] = 'H';
-        validAnswer[12][10] = 'M';
-        validAnswer[12][13] = 'P';
-        validAnswer[12][18] = 'D';
-
-        // Row 13
-        validAnswer[13][13] = 'L';
-
-        // Row 14
-        validAnswer[14][12] = 'Z';
-        validAnswer[14][13] = 'E';
-        validAnswer[14][14] = 'R';
-        validAnswer[14][15] = 'O';
-
-        // Row 15
-        validAnswer[15][13] = 'X';
-        
     }
 
     public void setCrosswordValidInput(){
@@ -338,7 +155,6 @@ public class CrosswordActivity extends AppCompatActivity {
 
         // Row 3
         validInput[3][7] = Boolean.TRUE;
-        validInput[3][13] = Boolean.TRUE;
 
         // Row 4
         validInput[4][1] = Boolean.TRUE;
@@ -438,10 +254,10 @@ public class CrosswordActivity extends AppCompatActivity {
  * garage collection
  ****************
 
-        Boolean[][] validInput = {{false},
-                            {false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false},
-                            {false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false}};
-        validInput[1][1] =  true;
+ Boolean[][] validInput = {{false},
+ {false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false},
+ {false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false}};
+ validInput[1][1] =  true;
 
  **************
  *end
