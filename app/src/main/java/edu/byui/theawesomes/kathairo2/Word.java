@@ -76,11 +76,13 @@ public class Word {
      * @return nothing
      *****************************************************/
 
-    public void setAnswer(String answerToSet){
+    public void setAnswer(String answerToSet, int row, int column){
             for (int i = 0; i < answerToSet.length(); i++) {
                 CharacterCell cell = new CharacterCell();
                 cell.setCharacter("" + answerToSet.charAt(i));
                 cell.setIndex(i);
+                cell.setRow(row);
+                cell.setColumn(column);
                 numberofLettersInAnswer = i + 1;
                 answer.add(cell);
             }

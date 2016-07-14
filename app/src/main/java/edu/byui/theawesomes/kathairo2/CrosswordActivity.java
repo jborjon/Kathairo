@@ -5,9 +5,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
@@ -16,7 +16,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.Chronometer;
 
 import org.w3c.dom.Text;
 
@@ -38,6 +38,8 @@ public class CrosswordActivity extends AppCompatActivity {
     //reset letter on click
     // perhaps add a highlighted yellow when it's selected and then change it when it goes away?
 
+    // The timer!
+    Chronometer timer;
 
     //Which of these are valid?
     Boolean[][] validInput = new Boolean[16][22];
@@ -51,11 +53,17 @@ public class CrosswordActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Associate the chronometer with the on-page timer
+        timer = (Chronometer) findViewById(R.id.puzzleTimer);
+
         Word test = new Word();
 
         setCrosswordValidInput();
         setCrosswordTextBoxes();
         setValidAnswers();
+        // Start the timer
+        timer.start();
+
     }
 
     public void mainMenuOnClick(View v){
@@ -150,7 +158,6 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
     public void setCrosswordTextBoxes(){
-        validAnswer[1][7] = 'C';
         for(int r = 1; r <= 15; r++) {
             for (int c = 1; c <= 21; c++) {
                 String buttonID = "r" + r + "c" + c;
