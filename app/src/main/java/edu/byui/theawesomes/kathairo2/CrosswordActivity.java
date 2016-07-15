@@ -119,12 +119,16 @@ public class CrosswordActivity extends AppCompatActivity {
                                Log.i("Checkifsolved", "textuser: " + textView1.getText());
 
                                Log.i("Checkifsolved", "textAnswer " + words.get(0).getLetter(i));
-                               if(textView1.getText().equals(words.get(0).getLetter(i))) {
+                               if(words.get(0).getLetter(i).equals(textView1.getText().toString())) {
                                    textView1.setBackgroundColor(Color.GREEN);
                                    test++;
+
                                }
+                               else
+                               {textView1.setBackgroundColor(Color.RED);}
                                    Log.i("Checkifsolved", "I: " + words.get(0).getNumberOfLettersInAnswer());
-                                   Log.i("Checkifsolved", "bool has to be 4: " + test);
+                               Log.i("Checkifsolved", "bool tiene que ser 4: " + test);
+
 
                                }
 
