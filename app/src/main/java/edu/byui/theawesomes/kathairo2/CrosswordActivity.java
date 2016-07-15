@@ -225,19 +225,33 @@ public class CrosswordActivity extends AppCompatActivity {
                     textView.setTextColor(Color.BLACK);
                     textView.setText("");
                     final TextView buttonT = (TextView) findViewById(resID);
+                    final TextView textViewT = (TextView) findViewById(resID);
                     final int finalC = c;
                     final int finalR = r;
+
                     buttonT.setOnTouchListener(new View.OnTouchListener() {
                         @Override
                         public boolean onTouch(View v, MotionEvent event) {
-                            TextView textView = (TextView) findViewById(resID);
+                            final TextView textView = (TextView) findViewById(resID);
                             if (!((textView.getText().toString().toUpperCase()).equals(Character.toString(validAnswer[finalR][finalC])))) {
-                                textView.setBackgroundColor(Color.WHITE);
+                                textView.setBackgroundColor(Color.YELLOW);
                                 textView.setText("");
                             }
                             return false;
                         }
                     });
+
+                    buttonT.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                        public void onFocusChange(View v, boolean hasFocus) {
+                            if(!hasFocus ){
+                                if (!((textViewT.getText().toString().toUpperCase()).equals(Character.toString(validAnswer[finalR][finalC])))) {
+                                    textViewT.setBackgroundColor(Color.WHITE);
+                                }
+                            }
+                        }
+
+                    });
+
 
                 }
 /**/
