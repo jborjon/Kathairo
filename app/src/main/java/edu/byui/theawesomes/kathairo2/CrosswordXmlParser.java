@@ -79,6 +79,7 @@ public class CrosswordXmlParser {
                 word.setCol(readNumber(parser));
                 assert (word.getCol() != -1);
             } else if(name.equals("direction")) {
+                //word.setIsDown(true);
                 word.setIsDown(readBoolean(parser));
             }
             else {
@@ -114,7 +115,7 @@ public class CrosswordXmlParser {
                 result = true;
                 break;
             default:
-                result = false;
+                assert (!(text.equals("across")||text.equals("down")));
                 break;
         }
         return result;
