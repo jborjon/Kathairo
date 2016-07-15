@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
 import org.xmlpull.v1.XmlPullParserException;
@@ -16,7 +17,7 @@ import java.io.IOException;
 
 public class MainScreen extends AppCompatActivity {
 
-    Crossword crossword;
+    protected Crossword crossword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,7 @@ public class MainScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main_screen);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         try {
             CrosswordXmlParser crosswordXmlParser = new CrosswordXmlParser();
             AssetManager assetManager = getAssets();
@@ -39,7 +41,14 @@ public class MainScreen extends AppCompatActivity {
 
     public void newGameOnClick(View v){
         Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
-        intent.putExtra("CrosswordObject", (Parcelable) crossword);
+        Log.i("test", "it made itNG");
+        try {
+            intent.putExtra("CrosswordObject", (Parcelable) crossword);
+        }
+        catch (Exception e){
+
+        }
+        Log.i("test", "it made it1NG");
         startActivity(intent);
     }
 
@@ -47,12 +56,4 @@ public class MainScreen extends AppCompatActivity {
         Intent i = new Intent(this, AboutActivity.class);
         startActivity(i);
     }
-
-    public void cluesOnClick(View v){
-        Intent i = new Intent(this, CluesActivity.class);
-        //i.putExtras(bundle);
-        startActivity(i);
-    }
-
-
 }

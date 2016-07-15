@@ -3,6 +3,7 @@ package edu.byui.theawesomes.kathairo2;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -16,6 +17,8 @@ import java.util.List;
 
 public class CluesActivity extends AppCompatActivity {
 
+    private Crossword crossword;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,38 +28,31 @@ public class CluesActivity extends AppCompatActivity {
         /*******************
          * Load the crossword
          */
-        Crossword crossword = new Crossword();
-        //Below is testing to get the xml file to work
-        try {
-            CrosswordXmlParser crosswordXmlParser = new CrosswordXmlParser();
-            AssetManager assetManager = getAssets();
-            crossword.setCrosswordList(crosswordXmlParser.parse(assetManager.open("crossword.xml")));
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            crossword = extras.getParcelable("CrosswordObject");
+        }
+        else {
+            crossword = new Crossword();
+            try {
+                CrosswordXmlParser crosswordXmlParser = new CrosswordXmlParser();
+                AssetManager assetManager = getAssets();
+                crossword.setCrosswordList(crosswordXmlParser.parse(assetManager.open("crossword.xml")));
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (XmlPullParserException e) {
+                e.printStackTrace();
+            }
         }
 
         // Display the clues
         displayClues(crossword);
     }
 
-    public void mainMenuOnClick(View v){
-        Intent i = new Intent(this, MainScreen.class);
-        //i.putExtras(bundle);
-        startActivity(i);
-    }
-
     public void newGameOnClick(View v){
-        Intent i = new Intent(this, CrosswordActivity.class);
-        //i.putExtras(bundle);
-        startActivity(i);
-    }
-
-    public void cluesOnClick(View v){
-        Intent i = new Intent(this, CluesActivity.class);
-        //i.putExtras(bundle);
-        startActivity(i);
+            Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
+            intent.putExtra("CrosswordObject", (Parcelable) crossword);
+            startActivity(intent);
     }
 
     protected void displayClues(Crossword crosswordWord) {

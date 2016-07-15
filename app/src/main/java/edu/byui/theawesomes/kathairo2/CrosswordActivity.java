@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -34,16 +35,17 @@ public class CrosswordActivity extends AppCompatActivity {
     // How to transfer the crossword between things.
 
     // The timer!
-    Chronometer timer;
+    protected Chronometer timer;
+    private Crossword crossword;
 
     //Which of these are valid?
-    Boolean[][] validInput = new Boolean[16][22];
-    Character[][] validAnswer = new Character[16][22];
+    private Boolean[][] validInput = new Boolean[16][22];
+    private Character[][] validAnswer = new Character[16][22];
 
     private List<Word> words = new ArrayList<Word>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        Log.i("test", "it made it");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cross_word);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -52,9 +54,8 @@ public class CrosswordActivity extends AppCompatActivity {
         // Associate the chronometer with the on-page timer
         timer = (Chronometer) findViewById(R.id.puzzleTimer);
 
-        Word test = new Word();
-        Crossword crossword;
         Bundle extras = getIntent().getExtras();
+
         if (extras != null) {
             crossword = extras.getParcelable("CrosswordObject");
         }
@@ -70,27 +71,27 @@ public class CrosswordActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-
-       // Crossword crossword = new Crossword();
-        //Below is testing to get the xml file to work
-
-        words = crossword.getCrosswordList();
+        Log.i("test", "it made it2");
         setCrosswordValidInput(crossword);
         setCrosswordTextBoxes();
         setValidAnswers(crossword);
+        Log.i("test", "it made it3");
         // Start the timer
         timer.start();
-
-
-
+        Log.i("test", "it made it4");
     }
 
     public void mainMenuOnClick(View v){
-        Intent i = new Intent(this, MainScreen.class);
-        //i.putExtras(bundle);
-        startActivity(i);
+            Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
+            intent.putExtra("CrosswordObject", (Parcelable) crossword);
+            startActivity(intent);
     }
 
+    public void cluesOnClick(View v){
+        Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
+        intent.putExtra("CrosswordObject", (Parcelable) crossword);
+        startActivity(intent);
+    }
 
     public void checkIfSolvedOnClick(View v) {
         //checks if it's solved
@@ -188,23 +189,6 @@ isSolved = true;
             AlertDialog alert11 = builder1.create();
             alert11.show();
         }
-    }
-
-    public void newGameOnClick(View v){
-
-        Intent i = new Intent(this, CrosswordActivity.class);
-        //i.putExtras(bundle);
-        startActivity(i);
-    }
-
-    public void cluesOnClick(View v){
-
-
-
-        Intent i = new Intent(this, CluesActivity.class);
-        //i.putExtras(bundle);
-        startActivity(i);
-        /**/
     }
 
     public void setCrosswordTextBoxes(){

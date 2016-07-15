@@ -23,17 +23,4 @@ public class AboutActivity extends AppCompatActivity {
         //i.putExtras(bundle);
         startActivity(i);
     }
-
-    public void newGameOnClick(View v){
-        Intent i = new Intent(this, CrosswordActivity.class);
-        //i.putExtras(bundle);
-        startActivity(i);
-    }
-
-    public void cluesOnClick(View v){
-        Intent i = new Intent(this, CluesActivity.class);
-        //i.putExtras(bundle);
-        startActivity(i);
-    }
-
 }
