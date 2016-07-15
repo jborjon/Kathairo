@@ -1,31 +1,24 @@
 package edu.byui.theawesomes.kathairo2;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.SystemClock;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
+import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Chronometer;
 
-import org.w3c.dom.Text;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -38,13 +31,8 @@ public class CrosswordActivity extends AppCompatActivity {
 
 
     //To work on:
-    // back button to the clues
-    // make the clues bigger
-    //don't have answer
     //Numbers on the crossword
     //Finalize the solver and make it look nice (have the colors work)
-    //adjust the size on the text
-    //adjust the size of the text boxes
     //
 
     // The timer!
@@ -271,6 +259,7 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
     public void formatTextBoxes(TextView textView, int r, int c){
+        Display display = getWindowManager().getDefaultDisplay();
         textView.setTextColor(Color.WHITE);
         textView.setBackgroundColor(Color.BLACK);
 
@@ -279,13 +268,13 @@ public class CrosswordActivity extends AppCompatActivity {
         textView.setText("");
         textView.setMaxLines(1);
 
-        textView.setMaxWidth(30);
-        textView.setMaxHeight(50);
-        textView.setWidth(30);
-        textView.setHeight(50);
+        textView.setMaxWidth(((display.getWidth())/26));
+        textView.setMaxHeight(((display.getHeight())/28));
+        textView.setWidth(((display.getWidth())/26));
+        textView.setHeight(((display.getHeight())/28));
         textView.setX(c);
         textView.setY(r);
-        textView.setTextSize(10);
+        textView.setTextSize((((display.getHeight())/32)));
         textView.setEnabled(Boolean.FALSE);
     }
 
