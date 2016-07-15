@@ -245,6 +245,7 @@ public class CrosswordActivity extends AppCompatActivity {
                         }
                     });
 
+                    //random commment!
                     buttonT.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                         public void onFocusChange(View v, boolean hasFocus) {
                             if(!hasFocus ){
