@@ -1,6 +1,5 @@
 package edu.byui.theawesomes.kathairo2;
 
-//random comment to get this commited and pushed!
 
 /**
  * Created by fmcho on 7/1/2016.

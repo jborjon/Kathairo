@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-//random comment to get this commited and pushed!
 
 public class MainScreen extends AppCompatActivity {
 

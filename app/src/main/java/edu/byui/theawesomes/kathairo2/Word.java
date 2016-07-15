@@ -5,9 +5,6 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-
-//random comment to get this commited and pushed!
-
 /**
  * @author      Joseph Borjon
  * @version     1.6                 (current version number of program)

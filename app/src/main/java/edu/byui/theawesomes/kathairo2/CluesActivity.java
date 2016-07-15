@@ -13,7 +13,6 @@ import org.xmlpull.v1.XmlPullParserException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-//random comment to get this commited and pushed!
 
 public class CluesActivity extends AppCompatActivity {
 

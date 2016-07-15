@@ -8,8 +8,10 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.Display;
+import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
@@ -22,19 +24,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-//random comment to get this commited and pushed!
+
 
 public class CrosswordActivity extends AppCompatActivity {
-
-    //Perhaps when you click on the text box it becomes editable
-    //Setting the background to black for nonediitable and white for editiable
-    //
-
 
     //To work on:
     //Numbers on the crossword
     //Finalize the solver and make it look nice (have the colors work)
-    //
+    // How to transfer the crossword between things.
 
     // The timer!
     Chronometer timer;
@@ -136,10 +133,10 @@ public class CrosswordActivity extends AppCompatActivity {
                 }
             }
         }
-
+isSolved = true;
         if(isSolved == true){
             AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
-            builder1.setMessage("Congratualtions you finished!");
+            builder1.setMessage("Congratualtions your time was: "+timer.getText().toString() + "!");
             builder1.setCancelable(true);
 
             builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
@@ -223,7 +220,19 @@ public class CrosswordActivity extends AppCompatActivity {
                     final TextView textViewT = (TextView) findViewById(resID);
                     final int finalC = c;
                     final int finalR = r;
+/* for when we want to add the type and it focuses on the next one
+                    buttonT.addTextChangedListener(new TextWatcher() {
+                                                      public void onTextChanged(CharSequence s, int start, int before, int count) {
+                                                          // TODO Auto-generated method stub
+                                                          if(textViewT.getText().toString().length()==1)
+                                                          {
+                                                              textViewT.clearFocus();
+                                                             // textViewTN.requestFocus();
+                                                              textViewTN.setCursorVisible(true);
 
+                                                          }
+                                                      }
+*/
                     buttonT.setOnTouchListener(new View.OnTouchListener() {
                         @Override
                         public boolean onTouch(View v, MotionEvent event) {
@@ -261,6 +270,7 @@ public class CrosswordActivity extends AppCompatActivity {
 
     public void formatTextBoxes(TextView textView, int r, int c){
         Display display = getWindowManager().getDefaultDisplay();
+
         textView.setTextColor(Color.WHITE);
         textView.setBackgroundColor(Color.BLACK);
 
@@ -269,13 +279,13 @@ public class CrosswordActivity extends AppCompatActivity {
         textView.setText("");
         textView.setMaxLines(1);
 
-        textView.setMaxWidth(((display.getWidth())/26));
-        textView.setMaxHeight(((display.getHeight())/28));
-        textView.setWidth(((display.getWidth())/26));
-        textView.setHeight(((display.getHeight())/28));
+        textView.setMaxWidth(((display.getWidth())/40));
+        textView.setMaxHeight(((display.getHeight())/35));
+        textView.setWidth(((display.getWidth())/40));
+        textView.setHeight(((display.getHeight())/35));
         textView.setX(c);
         textView.setY(r);
-        textView.setTextSize((((display.getHeight())/32)));
+        textView.setTextSize(20);
         textView.setEnabled(Boolean.FALSE);
     }
 
