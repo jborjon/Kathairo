@@ -3,8 +3,6 @@ package edu.byui.theawesomes.kathairo2;
 import java.util.ArrayList;
 import java.util.List;
 
-//random comment to get this commited and pushed!
-
 /**
  * @author      Felipe Chora
  * @version     1.6                 (current version number of program)
@@ -15,8 +13,6 @@ public class Crossword {
         This is the list of words for the crossword
      */
     private List<Word> crossword = new ArrayList<Word>();
-
-
 
     /****************************************************
      * Default Constructor just needs to be protected
@@ -43,8 +39,8 @@ public class Crossword {
         crossword.add(toAdd);
     }
 
-    /**********************************************************
-     * Returns all the words in the crossword puzzle.         *
+    /****************************************************
+     * Returns all the words in the crossword puzzle.*
      * @return A list of all the words in the crossword puzzle*
      *****************************************************/
     public List<Word> getCrosswordList(){
@@ -63,6 +59,4 @@ public class Crossword {
     public void addWordObject(Word toSet){
         crossword.add(toSet);
     }
-
-
 }
