@@ -3,6 +3,7 @@ package edu.byui.theawesomes.kathairo2;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -13,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
@@ -20,9 +22,13 @@ import android.widget.TextView;
 import android.widget.Chronometer;
 
 import org.w3c.dom.Text;
+import org.xmlpull.v1.XmlPullParserException;
 
+import java.io.IOException;
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class CrosswordActivity extends AppCompatActivity {
 
@@ -46,6 +52,7 @@ public class CrosswordActivity extends AppCompatActivity {
     Boolean[][] validInput = new Boolean[16][22];
     Character[][] validAnswer = new Character[16][22];
 
+    private List<Word> words = new ArrayList<Word>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -65,6 +72,20 @@ public class CrosswordActivity extends AppCompatActivity {
         // Start the timer
         timer.start();
 
+
+        Crossword crossword = new Crossword();
+        //Below is testing to get the xml file to work
+        try {
+            CrosswordXmlParser crosswordXmlParser = new CrosswordXmlParser();
+            AssetManager assetManager = getAssets();
+            crossword.setCrosswordList(crosswordXmlParser.parse(assetManager.open("crossword.xml")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (XmlPullParserException e) {
+            e.printStackTrace();
+        }
+
+        words = crossword.getCrosswordList();
     }
 
     public void mainMenuOnClick(View v){
@@ -72,6 +93,7 @@ public class CrosswordActivity extends AppCompatActivity {
         //i.putExtras(bundle);
         startActivity(i);
     }
+
 
     public void checkIfSolvedOnClick(View v) {
         //checks if it's solved
@@ -82,13 +104,38 @@ public class CrosswordActivity extends AppCompatActivity {
                     String buttonID = "r" + r + "c" + c;
                     int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                     EditText textView = (EditText) findViewById(resID);
-                    if (!((textView.getText().toString().toUpperCase()).equals(Character.toString(validAnswer[r][c])))) {
+                    if ( r == 6 && c == 4) {
+                            int test = 0;
+                       if (((textView.getText().toString().toUpperCase()).equals("D"))) {
+                            Log.i("Checkifsolved", "IfStatement");
+                            textView.setBackgroundColor(Color.GREEN);
+                           for(int i = 1; i < words.get(0).getNumberOfLettersInAnswer(); i++) {
+                               Log.i("Checkifsolved", "I: " + i);
+
+                               String ID = "r" + (r + i) + "c" + c;
+                               int resoID = getResources().getIdentifier(ID, "id", getPackageName());
+                               Log.i("Checkifsolved", "Idloop: " + ID);
+                               EditText textView1 = (EditText) findViewById(resoID);
+                               Log.i("Checkifsolved", "textuser: " + textView1.getText());
+
+                               Log.i("Checkifsolved", "textAnswer " + words.get(0).getLetter(i));
+                               if(textView1.getText().equals(words.get(0).getLetter(i))) {
+                                   textView1.setBackgroundColor(Color.GREEN);
+                                   test++;
+                               }
+                                   Log.i("Checkifsolved", "I: " + words.get(0).getNumberOfLettersInAnswer());
+                                   Log.i("Checkifsolved", "bool has to be 4: " + test);
+
+                               }
+
+
+                        }
                     isSolved = false;
-                        textView.setBackgroundColor(Color.RED);
-                        textView.setText("");
+
+                        //textView.setText("");
                     }
                     else{
-                        textView.setBackgroundColor(Color.GREEN);
+                        //textView.setBackgroundColor(Color.RED);
                     }
 
                 }
@@ -129,6 +176,7 @@ public class CrosswordActivity extends AppCompatActivity {
         else {
             AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
             builder1.setMessage("Sorry you aren't quite done yet!");
+            //builder1.setMessage(words.get(0).getAnswer());
             builder1.setCancelable(true);
 
             builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
@@ -216,7 +264,7 @@ public class CrosswordActivity extends AppCompatActivity {
         textView.setHeight(50);
         textView.setX(c);
         textView.setY(r);
-        textView.setTextSize(40);
+        textView.setTextSize(10);
         textView.setEnabled(Boolean.FALSE);
     }
 

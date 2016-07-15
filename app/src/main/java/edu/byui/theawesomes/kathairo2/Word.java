@@ -35,6 +35,7 @@ public class Word {
     private int col;
 
     private boolean isDown;
+
     /****************************************************
      * Non-Default Constructor to set up everything
      *****************************************************/
