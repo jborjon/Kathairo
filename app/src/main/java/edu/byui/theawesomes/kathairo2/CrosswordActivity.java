@@ -43,6 +43,8 @@ public class CrosswordActivity extends AppCompatActivity {
     //don't have answer
     //Numbers on the crossword
     //Finalize the solver and make it look nice (have the colors work)
+    //adjust the size on the text
+    //adjust the size of the text boxes
     //
 
     // The timer!
