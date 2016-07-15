@@ -97,7 +97,7 @@ public class CluesActivity extends AppCompatActivity {
                 //put the Clue in the text
                 cluesTextField.append(crossswordList.get(i).getClue() + "\n");
                 //Debug information
-                cluesTextField.append(crossswordList.get(i).getAnswer() + " " + crossswordList.get(i).getNumberOfLettersInAnswer() + "\n");
+                cluesTextField.append(crossswordList.get(i).getAnswer() + " row: "+ crossswordList.get(i).getRow() + " col: "+ crossswordList.get(i).getCol() + "\n");
             }
         }
     }

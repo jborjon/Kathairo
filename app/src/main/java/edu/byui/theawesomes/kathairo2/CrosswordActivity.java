@@ -37,13 +37,13 @@ public class CrosswordActivity extends AppCompatActivity {
     //
 
 
-    //Add the to upper function
+    //To work on:
     // back button to the clues
     // make the clues bigger
     //don't have answer
     //Numbers on the crossword
-    //reset letter on click
-    // perhaps add a highlighted yellow when it's selected and then change it when it goes away?
+    //Finalize the solver and make it look nice (have the colors work)
+    //
 
     // The timer!
     Chronometer timer;
