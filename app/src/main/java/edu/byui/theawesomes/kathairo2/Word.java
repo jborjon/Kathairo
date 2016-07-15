@@ -58,6 +58,7 @@ public class Word {
 
         String character = "";
         CharacterCell toReturn = new CharacterCell();
+
         for (int i = 0; i < answer.size(); i++) {
             if(i == index) {
                 toReturn = answer.get(i);
