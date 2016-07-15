@@ -1,27 +1,13 @@
 package edu.byui.theawesomes.kathairo2;
 
-import android.content.Context;
+
 import android.content.Intent;
-import android.content.res.AssetManager;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.provider.DocumentsContract;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Xml;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.lang.reflect.Array;
-import java.net.ContentHandler;
-import java.util.ArrayList;
-import java.util.List;
+//random comment to get this commited and pushed!
 
 public class MainScreen extends AppCompatActivity {
 
