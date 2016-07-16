@@ -15,6 +15,7 @@ import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Chronometer;
 
@@ -36,6 +37,8 @@ public class CrosswordActivity extends AppCompatActivity {
     // The puzzle
     private Crossword crossword;
     private MediaPlayer bkgrmsc;
+    private Switch switchMusic;
+    private boolean isMusicOn = true;
 
     // Used to determine which boxes are being used in the current crossword
     private Boolean[][] validInput;
@@ -65,7 +68,7 @@ public class CrosswordActivity extends AppCompatActivity {
         setCrosswordTextBoxes();
 
         // Start the timer
-        timer.start();
+            timer.start();
 
         //Set the Crossword numbering (in progess)
         TextView blah = (TextView) findViewById(R.id.number1);
@@ -74,17 +77,32 @@ public class CrosswordActivity extends AppCompatActivity {
         blah.setWidth(10);
         blah.setHeight(10);
 
+        switchMusic =(Switch) findViewById(R.id.switch1);
         bkgrmsc = MediaPlayer.create(this,R.raw.discomfort);
         bkgrmsc.setLooping(true);
-        bkgrmsc.start();
+        if(isMusicOn) {
+            bkgrmsc.start();
+        }
     }
 
 
+    public void setMusic(View v){
+        if(switchMusic.isChecked()) {
+            isMusicOn = false;
+            bkgrmsc.pause();
+        }
+        else{
+            isMusicOn = true;
+            bkgrmsc.start();
+        }
+    }
 
    @Override
     protected void onPause() {
         super.onPause();
-        bkgrmsc.pause();
+       if(isMusicOn) {
+           bkgrmsc.pause();
+       }
    }
 
 
@@ -92,7 +110,9 @@ public class CrosswordActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
        // bkgrmsc.seekTo(10);
-        bkgrmsc.start();
+        if(isMusicOn) {
+            bkgrmsc.start();
+        }
     }
 
     /****************************************************
