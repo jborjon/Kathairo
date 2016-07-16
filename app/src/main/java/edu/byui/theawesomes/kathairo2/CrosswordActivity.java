@@ -74,6 +74,7 @@ public class CrosswordActivity extends AppCompatActivity {
         }
         Log.i("test", "it made it2");
         setCrosswordValidInput();
+        assert(validInput[15][13] == true);
         setCrosswordTextBoxes();
         setValidAnswers();
         Log.i("test", "it made it3");
@@ -101,6 +102,16 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
     public void checkIfSolvedOnClick(View v) {
+        assert(validInput[15][13] == true);
+        for (int r = 1; r <= 15; r++) {
+            for (int c = 1; c <= 21; c++) {
+               // Log.i("validInputDR",Integer.toString(r));
+                //Log.i("validInputDC",Integer.toString(c));
+                assert(validInput[15][13] != true);
+                //Log.i("validInputD",Boolean.toString(validInput[r][c]));
+                Log.i("validInputD",Boolean.toString(validInput[15][13]));
+            }
+        }
         //checks if it's solved
         Boolean isSolved = Boolean.TRUE;
         Log.i("SolvedD", "preFOR input");
@@ -301,11 +312,6 @@ public class CrosswordActivity extends AppCompatActivity {
 
     public void setValidAnswers() {
 
-        //intialize the values to false because it's default
-        for (int i = 0; i <= validInput.length - 1; i++) {
-            Arrays.fill(validInput[i], Boolean.FALSE);
-        }
-
         //we are going to go through all the words in the crossword
         for (int i = 0; i < crossword.getCrosswordList().size(); i++) {
 
@@ -380,7 +386,9 @@ public class CrosswordActivity extends AppCompatActivity {
                 Log.i("validInput",Boolean.toString(validInput[r][c]));
             }
         }
+        assert(validInput[15][13] == true);
     }
+
 }
 /***************
  * garage collection
