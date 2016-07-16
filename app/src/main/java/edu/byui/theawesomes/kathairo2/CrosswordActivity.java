@@ -32,9 +32,11 @@ public class CrosswordActivity extends AppCompatActivity {
 
     //To work on:
     //Numbers on the crossword
-    //
+    //music
     // Hihglihgitn perfected
+    //Displaying score
     // maybe displaying the clues that was selected
+    //Maybe making iit move
 
     // The timer!
     protected Chronometer timer;
