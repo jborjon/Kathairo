@@ -102,83 +102,38 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
     public void checkIfSolvedOnClick(View v) {
-        assert(validInput[15][13] == true);
-        for (int r = 1; r <= 15; r++) {
-            for (int c = 1; c <= 21; c++) {
-               // Log.i("validInputDR",Integer.toString(r));
-                //Log.i("validInputDC",Integer.toString(c));
-                assert(validInput[15][13] != true);
-                //Log.i("validInputD",Boolean.toString(validInput[r][c]));
-                Log.i("validInputD",Boolean.toString(validInput[15][13]));
-            }
-        }
         //checks if it's solved
         Boolean isSolved = Boolean.TRUE;
-        Log.i("SolvedD", "preFOR input");
         for (int r = 1; r <= 15; r++) {
             for (int c = 1; c <= 21; c++) {
-                Log.i("SolvedD", Boolean.toString(validInput[r][c]));
-                Log.i("SolvedD", "r:" + r);
-                Log.i("SolvedD", "c:" + c);
                 if (validInput[r][c] == true) {
                     String buttonID = "r" + r + "c" + c;
                     int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                     EditText textView = (EditText) findViewById(resID);
-                    Log.i("SolvedT", textView.getText().toString());
-                    Log.i("SolvedA", Character.toString(validAnswer[r][c]));
-                    if (textView.getText().toString().equals(Character.toString(validAnswer[r][c]))) {
+                    if (!((textView.getText().toString().toUpperCase()).equals(Character.toString(validAnswer[r][c])))) {
+                        Log.i("textViewAR",Integer.toString(r));
+                        Log.i("textViewAC",Integer.toString(c));
+                        Log.i("textViewS", textView.getText().toString().toUpperCase());
+                        Log.i("textViewA", Character.toString(validAnswer[r][c]));
 
-                        Log.i("SolvedA", "" + validAnswer[r][c]);
-                        Log.i("SolvedT", "" + textView.getText().toString());
+                        isSolved = false;
+                        textView.setBackgroundColor(Color.RED);
+                        textView.setText("");
                     }
-//                    if ( r == 6 && c == 4) {
-//                            int test = 0;
-//                       if (((textView.getText().toString().toUpperCase()).equals("D"))) {
-//                            Log.i("Checkifsolved", "IfStatement");
-//                            textView.setBackgroundColor(Color.GREEN);
-//                           for(int i = 1; i < words.get(0).getNumberOfLettersInAnswer(); i++) {
-//                               Log.i("Checkifsolved", "I: " + i);
-//
-//                               String ID = "r" + (r + i) + "c" + c;
-//                               int resoID = getResources().getIdentifier(ID, "id", getPackageName());
-//                               Log.i("Checkifsolved", "Idloop: " + ID);
-//                               EditText textView1 = (EditText) findViewById(resoID);
-//                               Log.i("Checkifsolved", "textuser: " + textView1.getText());
-//
-//                               Log.i("Checkifsolved", "textAnswer " + words.get(0).getLetter(i));
-//                               if(words.get(0).getLetter(i).equals(textView1.getText().toString())) {
-//                                   textView1.setBackgroundColor(Color.GREEN);
-//                                   test++;
-//
-//                               }
-//                               else
-//                               {textView1.setBackgroundColor(Color.RED);}
-//                                   Log.i("Checkifsolved", "I: " + words.get(0).getNumberOfLettersInAnswer());
-//                               Log.i("Checkifsolved", "bool tiene que ser 4: " + test);
-//
-//
-//                               }
-//
-//
-//                        }
-//                    isSolved = false;
-//
-//                        //textView.setText("");
-//                    }
-//                    else{
-//                        //textView.setBackgroundColor(Color.RED);
-//                    }
+                    else{
+                        textView.setBackgroundColor(Color.GREEN);
+                    }
 
                 }
             }
         }
-        isSolved = true;
-        if (isSolved == true) {
+
+        if(isSolved == true){
             AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
-            builder1.setMessage("Congratualtions your time was: " + timer.getText().toString() + "!");
+            builder1.setMessage("Congratualtions you finished!");
             builder1.setCancelable(true);
 
-            builder1.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+            builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                     dialog.cancel();
                 }
@@ -203,13 +158,13 @@ public class CrosswordActivity extends AppCompatActivity {
             */
             AlertDialog alert11 = builder1.create();
             alert11.show();
-        } else {
+        }
+        else {
             AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
             builder1.setMessage("Sorry you aren't quite done yet!");
-            //builder1.setMessage(words.get(0).getAnswer());
             builder1.setCancelable(true);
 
-            builder1.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+            builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                     dialog.cancel();
                 }
@@ -331,7 +286,7 @@ public class CrosswordActivity extends AppCompatActivity {
                 for (int r = row; r < word.getNumberOfLettersInAnswer() + row; r++) {
                     //collumn stays the same while the row goes down
 //                    Log.i("validAnswer",Character.toString(word.getLetter(count).charAt(0)));
-                    validAnswer[r][col] = word.getLetter(count).charAt(0); //word.getLetter(count);
+                    validAnswer[r][col] = Character.toUpperCase(word.getLetter(count).charAt(0)); //word.getLetter(count);
                     //Log.i("validAnswer",word.getLetter(count));
                     count++;
 
@@ -340,10 +295,21 @@ public class CrosswordActivity extends AppCompatActivity {
                 //start at the parent col and goes across to the end
                 for (int c = col; c < word.getNumberOfLettersInAnswer() + col; c++) {
                     //collumn stays the same while the collumn goes down
-                    validAnswer[row][c] = word.getLetter(count).charAt(0);
+                    validAnswer[row][c] = Character.toUpperCase(word.getLetter(count).charAt(0));
+                    count++;
                 }
             }
         }
+        for (int r = 1; r <= 15; r++) {
+            for (int c = 1; c <= 21; c++) {
+                if(validInput[r][c] == true) {
+                    Log.i("validAnswerR", Integer.toString(r));
+                    Log.i("validAnswerC", Integer.toString(c));
+                    Log.i("validAnswer", Character.toString(validAnswer[r][c]));
+                }
+            }
+        }
+
     }
 
     public void setCrosswordValidInput() {
