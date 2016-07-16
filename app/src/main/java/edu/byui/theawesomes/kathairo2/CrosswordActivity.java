@@ -32,7 +32,8 @@ public class CrosswordActivity extends AppCompatActivity {
     //To work on:
     //Numbers on the crossword
     //Finalize the solver and make it look nice (have the colors work)
-    // How to transfer the crossword between things.
+    // Hihglihgitn perfected
+    // maybe doing the clues that was selected
 
     // The timer!
     protected Chronometer timer;
@@ -43,6 +44,7 @@ public class CrosswordActivity extends AppCompatActivity {
     private Character[][] validAnswer = new Character[16][22];
 
     private List<Word> words = new ArrayList<Word>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i("test", "it made it");
@@ -58,8 +60,7 @@ public class CrosswordActivity extends AppCompatActivity {
 
         if (extras != null) {
             crossword = extras.getParcelable("CrosswordObject");
-        }
-        else {
+        } else {
             crossword = new Crossword();
             try {
                 CrosswordXmlParser crosswordXmlParser = new CrosswordXmlParser();
@@ -72,84 +73,101 @@ public class CrosswordActivity extends AppCompatActivity {
             }
         }
         Log.i("test", "it made it2");
-        setCrosswordValidInput(crossword);
+        setCrosswordValidInput();
         setCrosswordTextBoxes();
-        setValidAnswers(crossword);
+        setValidAnswers();
         Log.i("test", "it made it3");
         // Start the timer
         timer.start();
         Log.i("test", "it made it4");
     }
 
-    public void mainMenuOnClick(View v){
-            Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
-            intent.putExtra("CrosswordObject", (Parcelable) crossword);
-            startActivity(intent);
-    }
-
-    public void cluesOnClick(View v){
+    public void mainMenuOnClick(View v) {
         Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
         intent.putExtra("CrosswordObject", (Parcelable) crossword);
         startActivity(intent);
     }
 
+    public void cluesOnClick(View v) {
+        Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
+        intent.putExtra("CrosswordObject", (Parcelable) crossword);
+        startActivity(intent);
+    }
+
+    public void testFunction(TextView textView) {
+
+//        if()
+
+    }
+
     public void checkIfSolvedOnClick(View v) {
         //checks if it's solved
         Boolean isSolved = Boolean.TRUE;
+        Log.i("SolvedD", "preFOR input");
         for (int r = 1; r <= 15; r++) {
             for (int c = 1; c <= 21; c++) {
+                Log.i("SolvedD", Boolean.toString(validInput[r][c]));
+                Log.i("SolvedD", "r:" + r);
+                Log.i("SolvedD", "c:" + c);
                 if (validInput[r][c] == true) {
                     String buttonID = "r" + r + "c" + c;
                     int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                     EditText textView = (EditText) findViewById(resID);
-                    if ( r == 6 && c == 4) {
-                            int test = 0;
-                       if (((textView.getText().toString().toUpperCase()).equals("D"))) {
-                            Log.i("Checkifsolved", "IfStatement");
-                            textView.setBackgroundColor(Color.GREEN);
-                           for(int i = 1; i < words.get(0).getNumberOfLettersInAnswer(); i++) {
-                               Log.i("Checkifsolved", "I: " + i);
+                    Log.i("SolvedT", textView.getText().toString());
+                    Log.i("SolvedA", Character.toString(validAnswer[r][c]));
+                    if (textView.getText().toString().equals(Character.toString(validAnswer[r][c]))) {
 
-                               String ID = "r" + (r + i) + "c" + c;
-                               int resoID = getResources().getIdentifier(ID, "id", getPackageName());
-                               Log.i("Checkifsolved", "Idloop: " + ID);
-                               EditText textView1 = (EditText) findViewById(resoID);
-                               Log.i("Checkifsolved", "textuser: " + textView1.getText());
-
-                               Log.i("Checkifsolved", "textAnswer " + words.get(0).getLetter(i));
-                               if(words.get(0).getLetter(i).equals(textView1.getText().toString())) {
-                                   textView1.setBackgroundColor(Color.GREEN);
-                                   test++;
-
-                               }
-                               else
-                               {textView1.setBackgroundColor(Color.RED);}
-                                   Log.i("Checkifsolved", "I: " + words.get(0).getNumberOfLettersInAnswer());
-                               Log.i("Checkifsolved", "bool tiene que ser 4: " + test);
-
-
-                               }
-
-
-                        }
-                    isSolved = false;
-
-                        //textView.setText("");
+                        Log.i("SolvedA", "" + validAnswer[r][c]);
+                        Log.i("SolvedT", "" + textView.getText().toString());
                     }
-                    else{
-                        //textView.setBackgroundColor(Color.RED);
-                    }
+//                    if ( r == 6 && c == 4) {
+//                            int test = 0;
+//                       if (((textView.getText().toString().toUpperCase()).equals("D"))) {
+//                            Log.i("Checkifsolved", "IfStatement");
+//                            textView.setBackgroundColor(Color.GREEN);
+//                           for(int i = 1; i < words.get(0).getNumberOfLettersInAnswer(); i++) {
+//                               Log.i("Checkifsolved", "I: " + i);
+//
+//                               String ID = "r" + (r + i) + "c" + c;
+//                               int resoID = getResources().getIdentifier(ID, "id", getPackageName());
+//                               Log.i("Checkifsolved", "Idloop: " + ID);
+//                               EditText textView1 = (EditText) findViewById(resoID);
+//                               Log.i("Checkifsolved", "textuser: " + textView1.getText());
+//
+//                               Log.i("Checkifsolved", "textAnswer " + words.get(0).getLetter(i));
+//                               if(words.get(0).getLetter(i).equals(textView1.getText().toString())) {
+//                                   textView1.setBackgroundColor(Color.GREEN);
+//                                   test++;
+//
+//                               }
+//                               else
+//                               {textView1.setBackgroundColor(Color.RED);}
+//                                   Log.i("Checkifsolved", "I: " + words.get(0).getNumberOfLettersInAnswer());
+//                               Log.i("Checkifsolved", "bool tiene que ser 4: " + test);
+//
+//
+//                               }
+//
+//
+//                        }
+//                    isSolved = false;
+//
+//                        //textView.setText("");
+//                    }
+//                    else{
+//                        //textView.setBackgroundColor(Color.RED);
+//                    }
 
                 }
             }
         }
-isSolved = true;
-        if(isSolved == true){
+        isSolved = true;
+        if (isSolved == true) {
             AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
-            builder1.setMessage("Congratualtions your time was: "+timer.getText().toString() + "!");
+            builder1.setMessage("Congratualtions your time was: " + timer.getText().toString() + "!");
             builder1.setCancelable(true);
 
-            builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
+            builder1.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                     dialog.cancel();
                 }
@@ -174,14 +192,13 @@ isSolved = true;
             */
             AlertDialog alert11 = builder1.create();
             alert11.show();
-        }
-        else {
+        } else {
             AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
             builder1.setMessage("Sorry you aren't quite done yet!");
             //builder1.setMessage(words.get(0).getAnswer());
             builder1.setCancelable(true);
 
-            builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
+            builder1.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                     dialog.cancel();
                 }
@@ -191,19 +208,19 @@ isSolved = true;
         }
     }
 
-    public void setCrosswordTextBoxes(){
-        for(int r = 1; r <= 15; r++) {
+    public void setCrosswordTextBoxes() {
+        for (int r = 1; r <= 15; r++) {
             for (int c = 1; c <= 21; c++) {
                 String buttonID = "r" + r + "c" + c;
                 final int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                 EditText textView = (EditText) findViewById(resID);
 
-                formatTextBoxes(textView,r,c);
+                formatTextBoxes(textView, r, c);
                 //once we get the crossword in we can check to see if the rows match up
                 //if((crossswordList.get(i).getRow() == r &&  crossswordList.get(i).getRow() == c))
                 //then we have it loop and fill out all the rest of the word and then going back
                 //no I don't think this will work I will leave it hear in case we want to do it later though
-                if(validInput[r][c] == true){
+                if (validInput[r][c] == true) {
                     assert textView != null;
                     textView.setEnabled(Boolean.TRUE);
                     textView.setBackgroundColor(Color.WHITE);
@@ -241,7 +258,7 @@ isSolved = true;
                     //random commment!
                     buttonT.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                         public void onFocusChange(View v, boolean hasFocus) {
-                            if(!hasFocus ){
+                            if (!hasFocus) {
                                 if (!((textViewT.getText().toString().toUpperCase()).equals(Character.toString(validAnswer[finalR][finalC])))) {
                                     textViewT.setBackgroundColor(Color.WHITE);
                                 }
@@ -257,11 +274,11 @@ isSolved = true;
         }
     }
 
-    public void formatNumberBoxes(TextView textView, int count){
+    public void formatNumberBoxes(TextView textView, int count) {
         textView.setText(Integer.toString(count));
     }
 
-    public void formatTextBoxes(TextView textView, int r, int c){
+    public void formatTextBoxes(TextView textView, int r, int c) {
         Display display = getWindowManager().getDefaultDisplay();
 
         textView.setTextColor(Color.WHITE);
@@ -272,17 +289,17 @@ isSolved = true;
         textView.setText("");
         textView.setMaxLines(1);
 
-        textView.setMaxWidth(((display.getWidth())/40));
-        textView.setMaxHeight(((display.getHeight())/35));
-        textView.setWidth(((display.getWidth())/40));
-        textView.setHeight(((display.getHeight())/35));
+        textView.setMaxWidth(((display.getWidth()) / 40));
+        textView.setMaxHeight(((display.getHeight()) / 35));
+        textView.setWidth(((display.getWidth()) / 40));
+        textView.setHeight(((display.getHeight()) / 35));
         textView.setX(c);
         textView.setY(r);
         textView.setTextSize(20);
         textView.setEnabled(Boolean.FALSE);
     }
 
-    public void setValidAnswers(Crossword crossword){
+    public void setValidAnswers() {
 
         //intialize the values to false because it's default
         for (int i = 0; i <= validInput.length - 1; i++) {
@@ -302,11 +319,10 @@ isSolved = true;
             // create a variable so that we can loop through the word
             int count = 0;
             //check to see if this is a word that goes across or down.
-            if(word.getIsDown())
-            {
+            if (word.getIsDown()) {
                 //start at the parent row and goes down to the end
 //                Log.i("validAnswer",word.getAnswer());
-                for (int r = row; r < word.getNumberOfLettersInAnswer()+row; r++) {
+                for (int r = row; r < word.getNumberOfLettersInAnswer() + row; r++) {
                     //collumn stays the same while the row goes down
 //                    Log.i("validAnswer",Character.toString(word.getLetter(count).charAt(0)));
                     validAnswer[r][col] = word.getLetter(count).charAt(0); //word.getLetter(count);
@@ -314,19 +330,17 @@ isSolved = true;
                     count++;
 
                 }
-            }
-            else
-            {
+            } else {
                 //start at the parent col and goes across to the end
-                for(int c = col; c < word.getNumberOfLettersInAnswer()+col; c++) {
+                for (int c = col; c < word.getNumberOfLettersInAnswer() + col; c++) {
                     //collumn stays the same while the collumn goes down
-                   validAnswer[row][c] = word.getLetter(count).charAt(0);
+                    validAnswer[row][c] = word.getLetter(count).charAt(0);
                 }
             }
         }
     }
 
-    public void setCrosswordValidInput(Crossword crossword) {
+    public void setCrosswordValidInput() {
 
         //intialize the values to false because it's default
         for (int i = 0; i <= validInput.length - 1; i++) {
@@ -344,25 +358,29 @@ isSolved = true;
             int col = word.getCol();
 
             //check to see if this is a word that goes across or down.
-            if(word.getIsDown())
-            {
+            if (word.getIsDown()) {
                 //start at the parent row and goes down to the end
-                for (int r = row; r < word.getNumberOfLettersInAnswer()+row; r++) {
+                for (int r = row; r < word.getNumberOfLettersInAnswer() + row; r++) {
                     //collumn stays the same while the row goes down
                     validInput[r][col] = true;
                 }
-            }
-            else
-            {
+            } else {
                 //start at the parent col and goes across to the end
-                for(int c = col; c < word.getNumberOfLettersInAnswer()+col; c++) {
+                for (int c = col; c < word.getNumberOfLettersInAnswer() + col; c++) {
                     //collumn stays the same while the collumn goes down
                     validInput[row][c] = true;
                 }
             }
         }
-    }
 
+        for (int r = 1; r <= 15; r++) {
+            for (int c = 1; c <= 21; c++) {
+                Log.i("validInputR",Integer.toString(r));
+                Log.i("validInputC",Integer.toString(c));
+                Log.i("validInput",Boolean.toString(validInput[r][c]));
+            }
+        }
+    }
 }
 /***************
  * garage collection
