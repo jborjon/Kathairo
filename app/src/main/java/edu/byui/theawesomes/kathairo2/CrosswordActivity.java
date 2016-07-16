@@ -97,7 +97,7 @@ public class CrosswordActivity extends AppCompatActivity {
 
     /****************************************************
      * This sets changes the activity to the Main menu
-     * @param v
+     * @param v View
      *****************************************************/
     public void mainMenuOnClick(View v){
         Intent intent = new Intent(this, MainScreen.class);
@@ -106,7 +106,7 @@ public class CrosswordActivity extends AppCompatActivity {
 
     /****************************************************
      * This sets changes the activity to the Main menu
-     * @param v
+     * @param v View
      *****************************************************/
     public void cluesOnClick(View v){
         Intent intent = new Intent(this, CluesActivity.class);
@@ -117,7 +117,7 @@ public class CrosswordActivity extends AppCompatActivity {
      * This checks if the user has solved the puzzle
      * it erases any wrong answers and changes the wrong
      * answers to red and the correct answers to green
-     * @param v
+     * @param v View
      *****************************************************/
     public void checkIfSolvedOnClick(View v) {
         //Don't want to waste the users time
