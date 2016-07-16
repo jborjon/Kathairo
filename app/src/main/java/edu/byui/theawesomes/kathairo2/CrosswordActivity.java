@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Color;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.app.AlertDialog;
@@ -255,10 +256,16 @@ public class CrosswordActivity extends AppCompatActivity {
         textView.setText("");
         textView.setMaxLines(1);
 
-        textView.setMaxWidth(((display.getWidth()) / 40));
-        textView.setMaxHeight(((display.getHeight()) / 35));
-        textView.setWidth(((display.getWidth()) / 40));
-        textView.setHeight(((display.getHeight()) / 35));
+        Display dp = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        dp.getSize(size);
+        int width = size.x;
+        int height = size.y;
+
+        textView.setMaxWidth((width / 30));
+        textView.setMaxHeight(height / 30);
+        textView.setWidth((width / 30));
+        textView.setHeight((height / 35));
         textView.setX(c);
         textView.setY(r);
         textView.setTextSize(20);
