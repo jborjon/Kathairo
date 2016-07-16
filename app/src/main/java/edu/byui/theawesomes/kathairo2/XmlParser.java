@@ -1,7 +1,6 @@
 package edu.byui.theawesomes.kathairo2;
 
 import android.util.Xml;
-import android.widget.TextView;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -15,7 +14,7 @@ import java.util.List;
  * Created by Jordan on 7/4/16. code obtained and modified from
  * https://developer.android.com/training/basics/network-ops/xml.html
  */
-public class CrosswordXmlParser {
+public class XmlParser {
     // We don't use namespaces
     private static final String ns = null;
 
@@ -31,9 +30,13 @@ public class CrosswordXmlParser {
         }
     }
 
-    //Starts the heavy lifting
+    /*****************************
+     * Read the feed
+     *  @param parser XMLPullParser
+     * @return List
+     ***************************/
     private List readFeed(XmlPullParser parser) throws XmlPullParserException, IOException {
-        List<edu.byui.theawesomes.kathairo2.Word> crossword = new ArrayList<edu.byui.theawesomes.kathairo2.Word>();
+        List<edu.byui.theawesomes.kathairo2.Word> crossword = new ArrayList<>();
 
         parser.require(XmlPullParser.START_TAG, ns, "Crossword");
         while (parser.next() != XmlPullParser.END_TAG) {
@@ -49,11 +52,15 @@ public class CrosswordXmlParser {
                 skip(parser);
             }
         }
+
         return crossword;
     }
-
-    // Parses the contents of an entry. If it encounters a title, summary, or link tag, hands them off
-    // to their respective "read" methods for processing. Otherwise, skips the tag.
+    /**************************************************************
+     * Parses the contents of an entry. If it encounters a title, summary, or link tag, hands them off
+     * to their respective "read" methods for processing. Otherwise, skips the tag.
+     * @param parser XMLPullParser
+     * @return Word
+     ************************************************************* */
     private Word readWord(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "Word");
 
@@ -66,6 +73,7 @@ public class CrosswordXmlParser {
 
             String name = parser.getName();
 
+            //set the part of word with whatever the parser is on
             if (name.equals("answer")) {
                 word.setAnswer(readText(parser));
             } else if (name.equals("clue")) {
@@ -74,12 +82,9 @@ public class CrosswordXmlParser {
                 word.setClueNumber(readNumber(parser));
             } else if (name.equals("row")) {
                 word.setRow(readNumber(parser));
-                assert (word.getRow() != -1);
             } else if(name.equals("column")) {
                 word.setCol(readNumber(parser));
-                assert (word.getCol() != -1);
             } else if(name.equals("direction")) {
-                //word.setIsDown(true);
                 word.setIsDown(readBoolean(parser));
             }
             else {
@@ -88,8 +93,11 @@ public class CrosswordXmlParser {
         }
         return word;
     }
-
-    // For the tags title and summary, extracts their text values.
+    /***************************************************************
+     * Reads the text and returns it as a String
+     * @param  parser XMLPullParser
+     * @return String
+     * ***************************************************************/
     private String readText(XmlPullParser parser) throws IOException, XmlPullParserException {
         String result = "";
         if (parser.next() == XmlPullParser.TEXT) {
@@ -99,7 +107,11 @@ public class CrosswordXmlParser {
         return result;
     }
 
-    //
+    /***************************************************************
+     * Reads the text and returns it as a Boolean
+     * @param  parser the XMLPullParser
+     * @return Boolean
+     * ***************************************************************/
     private Boolean readBoolean(XmlPullParser parser) throws IOException, XmlPullParserException {
         String text = "";
         Boolean result = false;
@@ -114,17 +126,18 @@ public class CrosswordXmlParser {
             case "down":
                 result = true;
                 break;
-            default:
-                assert (!(text.equals("across")||text.equals("down")));
-                break;
         }
         return result;
     }
 
-        //for the numbers convert string into number
+    /***************************************************************
+     * Reads the text and returns it as a number (up to 23)
+     * @param  parser the XMLPullParser
+     * @return int
+     * ***************************************************************/
     private int readNumber(XmlPullParser parser) throws IOException, XmlPullParserException {
         String text = "";
-        int result = 0;
+        int result;
         if (parser.next() == XmlPullParser.TEXT) {
             text = parser.getText();
             parser.nextTag();
@@ -209,6 +222,12 @@ public class CrosswordXmlParser {
         }
         return result;
     }
+
+
+    /***************************************************************
+     * skips unneeded tags
+     * @param  parser the XMLPullParser
+     * ***************************************************************/
     private void skip(XmlPullParser parser) throws XmlPullParserException, IOException {
         if (parser.getEventType() != XmlPullParser.START_TAG) {
             throw new IllegalStateException();
@@ -227,38 +246,3 @@ public class CrosswordXmlParser {
     }
 
 }
- /*This will house are Word class
-    public class Word {
-        public final String answer;
-        /*
-        public final int answerNumberOfLetters;
-        public final String clue;
-        public final int clueNumber;
-
-        private Word(String answer) {
-            this.answer = answer;
-        }
-        //The constructor that sets everything
-        /*private Word(String answer, int answerNumberOfLetters, String clue, int clueNumber) {
-            this.answer = answer;
-            this.answerNumberOfLetters = answerNumberOfLetters;
-            this.clue = clue;
-            this.clueNumber = clueNumber;
-        }
-    }
-     // Processes title tags in the feed.
-    private String readAnswer(XmlPullParser parser) throws IOException, XmlPullParserException {
-        parser.require(XmlPullParser.START_TAG, ns, "answer");
-        String answer = readText(parser);
-        parser.require(XmlPullParser.END_TAG, ns, "answer");
-        return answer;
-    }
-
-    // Processes link tags in the feed.
-    private String readClue(XmlPullParser parser) throws IOException, XmlPullParserException {
-        parser.require(XmlPullParser.START_TAG, ns, "clue");
-        String clue = readText(parser);
-        parser.require(XmlPullParser.END_TAG, ns, "clue");
-        return clue;
-    }
-*/

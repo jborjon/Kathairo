@@ -28,43 +28,45 @@ public class CluesActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         /*******************
          * Load the crossword
-         */
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            crossword = extras.getParcelable("CrosswordObject");
-        }
-        else {
-            crossword = new Crossword();
-            try {
-                CrosswordXmlParser crosswordXmlParser = new CrosswordXmlParser();
-                AssetManager assetManager = getAssets();
-                crossword.setCrosswordList(crosswordXmlParser.parse(assetManager.open("crossword.xml")));
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (XmlPullParserException e) {
-                e.printStackTrace();
-            }
+         ********************/
+        AssetManager assetManager = getAssets();
+        try {
+            crossword = new Crossword(assetManager);
+        } catch (IOException e) {
+            Log.e("MAJOR ERROR",e.toString());
+            e.printStackTrace();
         }
 
         // Display the clues
         displayClues(crossword);
     }
 
+    /****************************************************
+     * This sets changes the activity to the Crossword
+     * @param v
+     *****************************************************/
     public void newGameOnClick(View v){
-            Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
-        try {
-            intent.putExtra("CrosswordObject", (Parcelable) crossword);
-        }
-        catch (Exception e){
-            Log.e("intent put Extra",e.toString());
-        }
-            startActivity(intent);
+        Intent intent = new Intent(this, CrosswordActivity.class);
+        startActivity(intent);
     }
 
+    /****************************************************
+     * This sets changes the activity to the Main menu
+     * @param v
+     *****************************************************/
+    public void mainMenuOnClick(View v){
+        Intent intent = new Intent(this, MainScreen.class);
+        startActivity(intent);
+    }
+
+    /****************************************************
+     * This displays the crossword clues on the screen
+     * @param crosswordWord
+     *****************************************************/
     protected void displayClues(Crossword crosswordWord) {
 
         //Declare the variables they will be stored in
-        List<Word> crossswordList = new ArrayList<Word>();
+        List<Word> crossswordList;
 
         crossswordList = crosswordWord.getCrosswordList();
 
@@ -74,14 +76,14 @@ public class CluesActivity extends AppCompatActivity {
         // Put the down clues on the screen
         cluesTextField.append("Down:" + "\n");
         for (int i = 0; i < crossswordList.size(); ++i) {
+            //so it's easier to read
+            Word word = crossswordList.get(i);
             //Put the clue number in text
-            if(crossswordList.get(i).getIsDown()) {
-
-                cluesTextField.append(crossswordList.get(i).getClueNumber() + ". ");
-                //put the Clue in the text
-                cluesTextField.append(crossswordList.get(i).getClue() + " " + crossswordList.get(i).getNumberOfLettersInAnswer() + " letters" + "\n");
-                //Debug informations
-//                cluesTextField.append(crossswordList.get(i).getAnswer() + " row: "+ crossswordList.get(i).getRow() + " col: "+ crossswordList.get(i).getCol() + "\n");
+            if(word.getIsDown()) {
+                //put the clue number & clue in the text field
+                cluesTextField.append(word.getClueNumber() + ". "+word.getClue()+ " ");
+                //put the amount of letters in the clue in the text field
+                cluesTextField.append(word.getNumberOfLettersInAnswer() + " letters" + "\n");
             }
         }
 
@@ -91,13 +93,14 @@ public class CluesActivity extends AppCompatActivity {
         // Put the across clues on the screen
         cluesTextField.append("Across:" + "\n");
         for (int i = 0; i < crossswordList.size(); ++i) {
+            //so it's easier to read
+            Word word = crossswordList.get(i);
             //Put the clue number in text
-            if(!(crossswordList.get(i).getIsDown())) {
-                cluesTextField.append(crossswordList.get(i).getClueNumber() + ". ");
-                //put the Clue in the text
-                cluesTextField.append(crossswordList.get(i).getClue()+ " " + crossswordList.get(i).getNumberOfLettersInAnswer() + " letters" + "\n");
-                //Debug information
-//                cluesTextField.append(crossswordList.get(i).getAnswer() + " row: "+ crossswordList.get(i).getRow() + " col: "+ crossswordList.get(i).getCol() + "\n");
+            if(!(word.getIsDown())) {
+                //put the clue number & clue in the text field
+                cluesTextField.append(word.getClueNumber() + ". "+word.getClue()+ " ");
+                //put the amount of letters in the clue in the text field
+                cluesTextField.append(word.getNumberOfLettersInAnswer() + " letters" + "\n");
             }
         }
     }

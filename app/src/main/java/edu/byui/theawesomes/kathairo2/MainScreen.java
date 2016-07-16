@@ -2,57 +2,37 @@ package edu.byui.theawesomes.kathairo2;
 
 
 import android.content.Intent;
-import android.content.res.AssetManager;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
-
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
-
 
 public class MainScreen extends AppCompatActivity {
 
-    protected Crossword crossword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        crossword = new Crossword();
+
         setContentView(R.layout.activity_main_screen);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        try {
-            CrosswordXmlParser crosswordXmlParser = new CrosswordXmlParser();
-            AssetManager assetManager = getAssets();
-            crossword.setCrosswordList(crosswordXmlParser.parse(assetManager.open("crossword.xml")));
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        }
-
-
     }
 
+    /****************************************************
+     * This sets changes the activity to the Crossword
+     * @param v
+     *****************************************************/
     public void newGameOnClick(View v){
-        Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
-        try {
-            intent.putExtra("CrosswordObject", (Parcelable) crossword);
-        }
-        catch (Exception e){
-            Log.e("intent put Extra",e.toString());
-        }
-        Log.i("test", "it made it1NG");
+        Intent intent = new Intent(this, CrosswordActivity.class);
         startActivity(intent);
     }
 
+    /****************************************************
+     * This sets changes the activity to the about page
+     * @param v
+     *****************************************************/
     public void aboutOnClick(View v){
-        Intent i = new Intent(this, AboutActivity.class);
-        startActivity(i);
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
     }
 }

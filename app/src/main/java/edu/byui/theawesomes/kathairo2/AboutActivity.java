@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-//random comment to get this commited and pushed!
-//random comment to get this commited and pushed!
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -18,9 +16,12 @@ public class AboutActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
+    /****************************************************
+     * This sets changes the activity to the Main menu
+     * @param v
+     *****************************************************/
     public void mainMenuOnClick(View v){
-        Intent i = new Intent(this, MainScreen.class);
-        //i.putExtras(bundle);
-        startActivity(i);
+        Intent intent = new Intent(this, MainScreen.class);
+        startActivity(intent);
     }
 }
