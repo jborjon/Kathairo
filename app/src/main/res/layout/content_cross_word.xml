@@ -10,13 +10,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="edu.byui.theawesomes.kathairo2.CrosswordActivity"
-    tools:showIn="@layout/activity_cross_word">
+    tools:showIn="@layout/activity_cross_word"
+    android:orientation="horizontal" >
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:columnCount="23"
         android:rowCount="17"
-        android:layout_marginTop="46dp">
+        android:layout_marginTop="50dp">
 
         <EditText
             android:layout_width="wrap_content"

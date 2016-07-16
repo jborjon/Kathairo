@@ -11,7 +11,8 @@
         <activity
             android:name=".MainScreen"
             android:label="Kathairo"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +23,8 @@
             android:name=".CrosswordActivity"
             android:label="@string/title_activity_cross_word"
             android:parentActivityName=".MainScreen"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.byui.theawesomes.kathairo2.MainScreen" />
@@ -31,7 +33,8 @@
             android:name=".CluesActivity"
             android:label="@string/title_activity_clues"
             android:parentActivityName=".CrosswordActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.byui.theawesomes.kathairo2.CrosswordActivity" />
@@ -40,7 +43,8 @@
             android:name=".AboutActivity"
             android:label="@string/title_activity_about"
             android:parentActivityName=".MainScreen"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.byui.theawesomes.kathairo2.MainScreen" />
