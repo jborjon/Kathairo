@@ -31,9 +31,9 @@ public class CrosswordActivity extends AppCompatActivity {
 
     //To work on:
     //Numbers on the crossword
-    //Finalize the solver and make it look nice (have the colors work)
+    //
     // Hihglihgitn perfected
-    // maybe doing the clues that was selected
+    // maybe displaying the clues that was selected
 
     // The timer!
     protected Chronometer timer;
@@ -81,27 +81,37 @@ public class CrosswordActivity extends AppCompatActivity {
         // Start the timer
         timer.start();
         Log.i("test", "it made it4");
+        TextView blah = (TextView) findViewById(R.id.number1);
+        TextView textView = (TextView) findViewById(R.id.r1c8);
+        blah.setX(1);
+        blah.setWidth(10);
+        blah.setHeight(10);
     }
 
     public void mainMenuOnClick(View v) {
-        Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
-        intent.putExtra("CrosswordObject", (Parcelable) crossword);
+        Intent intent = new Intent(getBaseContext(), MainScreen.class);
+        try {
+            intent.putExtra("CrosswordObject", (Parcelable) crossword);
+        }
+        catch (Exception e){
+            Log.e("intent put Extra",e.toString());
+        }
         startActivity(intent);
     }
 
     public void cluesOnClick(View v) {
-        Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
-        intent.putExtra("CrosswordObject", (Parcelable) crossword);
+        Intent intent = new Intent(getBaseContext(), CluesActivity.class);
+        try {
+            intent.putExtra("CrosswordObject", (Parcelable) crossword);
+        }
+        catch (Exception e){
+            Log.e("intent put Extra",e.toString());
+        }
         startActivity(intent);
     }
 
-    public void testFunction(TextView textView) {
-
-//        if()
-
-    }
-
     public void checkIfSolvedOnClick(View v) {
+        timer.stop();
         //checks if it's solved
         Boolean isSolved = Boolean.TRUE;
         for (int r = 1; r <= 15; r++) {
@@ -166,6 +176,7 @@ public class CrosswordActivity extends AppCompatActivity {
 
             builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
+                    timer.start();
                     dialog.cancel();
                 }
             });

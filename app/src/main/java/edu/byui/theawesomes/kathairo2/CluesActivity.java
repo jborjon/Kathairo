@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -51,7 +52,12 @@ public class CluesActivity extends AppCompatActivity {
 
     public void newGameOnClick(View v){
             Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
+        try {
             intent.putExtra("CrosswordObject", (Parcelable) crossword);
+        }
+        catch (Exception e){
+            Log.e("intent put Extra",e.toString());
+        }
             startActivity(intent);
     }
 

@@ -41,12 +41,11 @@ public class MainScreen extends AppCompatActivity {
 
     public void newGameOnClick(View v){
         Intent intent = new Intent(getBaseContext(), CrosswordActivity.class);
-        Log.i("test", "it made itNG");
         try {
             intent.putExtra("CrosswordObject", (Parcelable) crossword);
         }
         catch (Exception e){
-
+            Log.e("intent put Extra",e.toString());
         }
         Log.i("test", "it made it1NG");
         startActivity(intent);
