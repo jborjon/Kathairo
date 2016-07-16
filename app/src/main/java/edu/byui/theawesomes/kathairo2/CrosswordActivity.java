@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Color;
 import android.graphics.Point;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.app.AlertDialog;
@@ -28,6 +29,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
+
 public class CrosswordActivity extends AppCompatActivity {
 
     //To work on:
@@ -39,6 +41,7 @@ public class CrosswordActivity extends AppCompatActivity {
     // The timer!
     protected Chronometer timer;
     private Crossword crossword;
+    private MediaPlayer bkgrmsc;
 
     //Which of these are valid?
     private Boolean[][] validInput = new Boolean[16][22];
@@ -87,6 +90,26 @@ public class CrosswordActivity extends AppCompatActivity {
         blah.setX(1);
         blah.setWidth(10);
         blah.setHeight(10);
+
+        bkgrmsc = MediaPlayer.create(this,R.raw.discomfort);
+        bkgrmsc.setLooping(true);
+        bkgrmsc.start();
+    }
+
+
+
+   @Override
+    protected void onPause() {
+        super.onPause();
+        bkgrmsc.pause();
+   }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+       // bkgrmsc.seekTo(10);
+        bkgrmsc.start();
     }
 
     public void mainMenuOnClick(View v) {
