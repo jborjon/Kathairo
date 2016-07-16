@@ -79,7 +79,7 @@ public class CluesActivity extends AppCompatActivity {
 
                 cluesTextField.append(crossswordList.get(i).getClueNumber() + ". ");
                 //put the Clue in the text
-                cluesTextField.append(crossswordList.get(i).getClue() + " " + crossswordList.get(i).getNumberOfLettersInAnswer() + "\n");
+                cluesTextField.append(crossswordList.get(i).getClue() + " " + crossswordList.get(i).getNumberOfLettersInAnswer() + " letters" + "\n");
                 //Debug informations
 //                cluesTextField.append(crossswordList.get(i).getAnswer() + " row: "+ crossswordList.get(i).getRow() + " col: "+ crossswordList.get(i).getCol() + "\n");
             }
@@ -95,7 +95,7 @@ public class CluesActivity extends AppCompatActivity {
             if(!(crossswordList.get(i).getIsDown())) {
                 cluesTextField.append(crossswordList.get(i).getClueNumber() + ". ");
                 //put the Clue in the text
-                cluesTextField.append(crossswordList.get(i).getClue() + "\n");
+                cluesTextField.append(crossswordList.get(i).getClue()+ " " + crossswordList.get(i).getNumberOfLettersInAnswer() + " letters" + "\n");
                 //Debug information
 //                cluesTextField.append(crossswordList.get(i).getAnswer() + " row: "+ crossswordList.get(i).getRow() + " col: "+ crossswordList.get(i).getCol() + "\n");
             }
