@@ -270,7 +270,7 @@ public class CrosswordActivity extends AppCompatActivity {
         Display dp = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         dp.getSize(size);
-        //random comment
+
         int width = size.x;
         int height = size.y;
 
