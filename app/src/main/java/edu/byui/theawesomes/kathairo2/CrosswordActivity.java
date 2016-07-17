@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
@@ -18,18 +17,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Chronometer;
 
-import java.io.IOException;
-
-
 public class CrosswordActivity extends AppCompatActivity {
-
-    //To work on:
-    //Numbers on the crossword (felipe)
-    //music (felipe)
-    //Displaying score(felipe)
-    // maybe displaying the clues that was selected
-    //Maybe making iit move
-    //moving the arrays to the crossword
 
     // The timer!
     protected Chronometer timer;
@@ -52,18 +40,12 @@ public class CrosswordActivity extends AppCompatActivity {
 
         // Associate the chronometer with the on-page timer
         timer = (Chronometer) findViewById(R.id.puzzleTimer);
-
         //Load the crossword
         AssetManager assetManager = getAssets();
-        try {
-            crossword = new Crossword(assetManager);
-        } catch (IOException e) {
-            Log.e("MAJOR ERROR",e.toString());
-            e.printStackTrace();
-        }
+
+        crossword = new Crossword(assetManager);
         //Draw the crossword
         setCrosswordTextBoxes();
-
         // Start the timer
         timer.start();
 
@@ -74,41 +56,41 @@ public class CrosswordActivity extends AppCompatActivity {
         blah.setWidth(10);
         blah.setHeight(10);
 
-        bkgrmsc = MediaPlayer.create(this,R.raw.discomfort);
+        bkgrmsc = MediaPlayer.create(this, R.raw.discomfort);
         bkgrmsc.setLooping(true);
         bkgrmsc.start();
     }
 
-
-
-   @Override
+    @Override
     protected void onPause() {
         super.onPause();
         bkgrmsc.pause();
-   }
+    }
 
 
     @Override
     protected void onResume() {
         super.onResume();
-       // bkgrmsc.seekTo(10);
+        // bkgrmsc.seekTo(10);
         bkgrmsc.start();
     }
 
     /****************************************************
      * This sets changes the activity to the Main menu
+     *
      * @param v View
      *****************************************************/
-    public void mainMenuOnClick(View v){
+    public void mainMenuOnClick(View v) {
         Intent intent = new Intent(this, MainScreen.class);
         startActivity(intent);
     }
 
     /****************************************************
      * This sets changes the activity to the Main menu
+     *
      * @param v View
      *****************************************************/
-    public void cluesOnClick(View v){
+    public void cluesOnClick(View v) {
         Intent intent = new Intent(this, CluesActivity.class);
         startActivity(intent);
     }
@@ -117,6 +99,7 @@ public class CrosswordActivity extends AppCompatActivity {
      * This checks if the user has solved the puzzle
      * it erases any wrong answers and changes the wrong
      * answers to red and the correct answers to green
+     *
      * @param v View
      *****************************************************/
     public void checkIfSolvedOnClick(View v) {
@@ -131,6 +114,7 @@ public class CrosswordActivity extends AppCompatActivity {
         //Loop through the entire puzzle
         for (int r = 1; r <= 15; r++) {
             for (int c = 1; c <= 21; c++) {
+
                 //check to make sure this can have text in it
                 if (validInput[r][c]) {
 
@@ -142,52 +126,58 @@ public class CrosswordActivity extends AppCompatActivity {
                     EditText textView = (EditText) findViewById(resID);
 
                     if (textView != null) {
+
                         String textToCheck = textView.getText().toString().toUpperCase();
 
                         //Check to see if there is a mismatch
                         if (!(textToCheck.equals(Character.toString(validAnswer[r][c])))) {
+
                             isSolved = false;
                             textView.setBackgroundColor(Color.RED);
                             textView.setText("");
+
                         } else {
+
                             textView.setBackgroundColor(Color.GREEN);
+
                         }
 
-                    }
-                    else
-                    {
-                        Log.e("SCREWED", "The textview is null");
                     }
                 }
             }
         }
 
         //If isSolved is still true they must have solved the puzzle!
-        if(isSolved){
+        if (isSolved) {
+
             AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
             builder1.setMessage("Congratualtions you finished!");
             builder1.setCancelable(true);
 
-            builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
+            builder1.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                     dialog.cancel();
                 }
             });
+
             AlertDialog alert11 = builder1.create();
             alert11.show();
         }
+
         //If isSolved is false they must not have solved the puzzle!
         else {
+
             AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
             builder1.setMessage("Sorry you aren't quite done yet!");
             builder1.setCancelable(true);
 
-            builder1.setNeutralButton("Ok",  new DialogInterface.OnClickListener() {
+            builder1.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                     timer.start();
                     dialog.cancel();
                 }
             });
+
             AlertDialog alert11 = builder1.create();
             alert11.show();
         }
@@ -199,89 +189,19 @@ public class CrosswordActivity extends AppCompatActivity {
      * listeners
      *****************************************************/
     public void setCrosswordTextBoxes() {
+
         validInput = crossword.getValidInput();
         validAnswer = crossword.getValidAnswer();
+
         for (int r = 1; r <= 15; r++) {
             for (int c = 1; c <= 21; c++) {
-                //Find the textviews
-                String buttonID = "r" + r + "c" + c;
-                final int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
-                EditText textView = (EditText) findViewById(resID);
 
-                formatTextBoxes(textView, r, c);
+                formatDefaultTextBoxes(r, c);
 
                 if (validInput[r][c]) {
-                    if (textView != null) {
-                        textView.setEnabled(Boolean.TRUE);
-                        textView.setBackgroundColor(Color.WHITE);
-                        textView.setTextColor(Color.BLACK);
-                        textView.setText("");
-                        //needed so we can access them in the listeners
-                        final TextView textViewListener = (TextView) findViewById(resID);
-                        final int finalC = c;
-                        final int finalR = r;
 
-                        if (textViewListener != null) {
-                            /****************************************************
-                             * This sets the onTouch listener, which change the
-                             * text to yellow and erase the text for new input
-                             *****************************************************/
-                            textViewListener.setOnTouchListener(new View.OnTouchListener() {
-                                @Override
-                                public boolean onTouch(View v, MotionEvent event) {
+                    formatEditableTextBoxes(r, c);
 
-                                    final TextView textView = (TextView) findViewById(resID);
-
-                                    if (textView != null) {
-
-                                        String textToCheck = textView.getText().toString().toUpperCase();
-                                        if (!(textToCheck.equals(Character.toString(validAnswer[finalR][finalC])))) {
-                                            textView.setBackgroundColor(Color.YELLOW);
-                                            textView.setText("");
-                                        }
-                                    }else
-                                    {
-                                        Log.e("SCREWED", "The onTouch textview is null");
-                                    }
-                                    return false;
-                                }
-                            });
-                        }
-                        else
-                        {
-                            Log.e("SCREWED", "The onTouch textviewListener is null");
-                        }
-
-
-                        if (textViewListener != null) {
-                            /****************************************************
-                             * This sets the onFocus listener, which change the
-                             * text to white after the focus change
-                             *****************************************************/
-                            textViewListener.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-                                public void onFocusChange(View v, boolean hasFocus) {
-
-                                    final TextView textView = (TextView) findViewById(resID);
-
-                                    if (!hasFocus) {
-                                        if(textView != null) {
-                                            String textToCheck = textView.getText().toString().toUpperCase();
-
-                                            if (!(textToCheck.equals(Character.toString(validAnswer[finalR][finalC])))) {
-                                                textViewListener.setBackgroundColor(Color.WHITE);
-                                            }
-                                        }else
-                                        {
-                                            Log.e("SCREWED", "The onFoucs textview is null");
-                                        }
-                                    }
-                                }
-                            });
-                        }else
-                        {
-                            Log.e("SCREWED", "The onFoucs textviewListener is null");
-                        }
-                    }
                 }
             }
         }
@@ -295,33 +215,106 @@ public class CrosswordActivity extends AppCompatActivity {
         textView.setText(Integer.toString(count));
     }
 
+    public void formatEditableTextBoxes(int r, int c) {
+
+        //Find the textviews
+        String buttonID = "r" + r + "c" + c;
+        final int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
+        final EditText textView = (EditText) findViewById(resID);
+
+
+        if (textView != null) {
+
+            textView.setEnabled(Boolean.TRUE);
+            textView.setBackgroundColor(Color.WHITE);
+            textView.setTextColor(Color.BLACK);
+            textView.setText("");
+
+            //needed so we can access them in the listeners
+            final String validAnswerString = Character.toString(validAnswer[r][c]);
+
+
+            /****************************************************
+             * This sets the onTouch listener, which change the
+             * text to yellow and erase the text for new input
+             *****************************************************/
+            textView.setOnTouchListener(new View.OnTouchListener() {
+
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+
+                    String textToCheck = textView.getText().toString().toUpperCase();
+
+                    if (!(textToCheck.equals(validAnswerString))) {
+
+                        textView.setBackgroundColor(Color.YELLOW);
+                        textView.setText("");
+
+                    }
+
+                    return false;
+
+                }
+            });
+
+            /****************************************************
+             * This sets the onFocus listener, which change the
+             * text to white after the focus change
+             *****************************************************/
+            textView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                public void onFocusChange(View v, boolean hasFocus) {
+
+                    if (!hasFocus) {
+
+                        String textToCheck = textView.getText().toString().toUpperCase();
+
+                        if (!(textToCheck.equals(validAnswerString))) {
+
+                            textView.setBackgroundColor(Color.WHITE);
+
+                        }
+                    }
+                }
+            });
+
+        }
+    }
+
     /****************************************************
      * This intializes the formating of the textboxes
      *****************************************************/
-    public void formatTextBoxes(TextView textView, int r, int c) {
+    public void formatDefaultTextBoxes(int r, int c) {
 
-        textView.setTextColor(Color.WHITE);
-        textView.setBackgroundColor(Color.BLACK);
+        //Find the textviews
+        String buttonID = "r" + r + "c" + c;
+        final int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
+        EditText textView = (EditText) findViewById(resID);
 
-        textView.setEnabled(Boolean.TRUE);
-        textView.setBackgroundColor(Color.BLACK);
-        textView.setText("");
-        textView.setMaxLines(1);
+        if (textView != null) {
+            textView.setTextColor(Color.WHITE);
 
-        Display dp = getWindowManager().getDefaultDisplay();
-        Point size = new Point();
-        dp.getSize(size);
+            textView.setBackgroundColor(Color.BLACK);
 
-        int width = size.x;
-        int height = size.y;
+            textView.setEnabled(Boolean.TRUE);
+            textView.setBackgroundColor(Color.BLACK);
+            textView.setText("");
+            textView.setMaxLines(1);
 
-        textView.setMaxWidth((width / 30));
-        textView.setMaxHeight(height / 30);
-        textView.setWidth((width / 30));
-        textView.setHeight((height / 35));
-        textView.setX(c);
-        textView.setY(r);
-        textView.setTextSize(20);
-        textView.setEnabled(Boolean.FALSE);
+            Display dp = getWindowManager().getDefaultDisplay();
+            Point size = new Point();
+            dp.getSize(size);
+
+            int width = size.x;
+            int height = size.y;
+
+            textView.setMaxWidth((width / 30));
+            textView.setMaxHeight(height / 30);
+            textView.setWidth((width / 30));
+            textView.setHeight((height / 35));
+            textView.setX(c);
+            textView.setY(r);
+            textView.setTextSize(20);
+            textView.setEnabled(Boolean.FALSE);
+        }
     }
 }

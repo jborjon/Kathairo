@@ -21,6 +21,7 @@ public class Crossword {
      * helps set the textbox
      */
     private Boolean[][] validInput = new Boolean[16][22];
+
     /*****
      This is the list of valid answers
      helps check the answers
@@ -35,39 +36,22 @@ public class Crossword {
     /****************************************************
      * Default Constructor
      *****************************************************/
-    public Crossword(AssetManager assetManager) throws IOException{
+    public Crossword(AssetManager assetManager){
+
         XmlParser crosswordXmlParser = new XmlParser();
         try {
             crossword = crosswordXmlParser.parse(assetManager.open("crossword.xml"));
-        } catch (XmlPullParserException e) {
+        } catch (XmlPullParserException | IOException e) {
             e.printStackTrace();
         }
         setValidInput();
         setValidAnswers();
     }
 
-    /****************************************************
-     * Adds a word to the Crossword.
-     *
-     * This method adds a word to the crossword puzzle. It
-     * takes a word and a number that is used to place the
-     * word properly.
-     *
-     * @param answerToSet String The word to add
-     * @param clueNumber int The position of the word
-     *****************************************************/
-    public void addWord(String answerToSet, int clueNumber){
-        //Delete this function?
-        Word toAdd = new Word();
-        toAdd.setAnswer(answerToSet);
-        toAdd.setClueNumber(clueNumber);
-        crossword.add(toAdd);
-    }
-
-    /****************************************************
-     * Returns all the words in the crossword puzzle.*
-     * @return A list of all the words in the crossword puzzle*
-     *****************************************************/
+    /**********************************************************
+     * Returns all the words in the crossword puzzle.
+     * @return A list of all the words in the crossword puzzle
+     **********************************************************/
     public List<Word> getCrosswordList(){
         return crossword;
     }
@@ -93,10 +77,11 @@ public class Crossword {
      *****************************************************/
     public void setValidInput(){
 
-        int length = validInput.length-1;
+        int validInputLength = validInput.length-1;
 
-        //intialize the values to false because it's default
-        for (int i = 0; i <= length; i++) {
+        //intialize the values to false because that's the default
+        for (int i = 0; i <= validInputLength; i++) {
+
             Arrays.fill(validInput[i], Boolean.FALSE);
         }
 
@@ -104,6 +89,7 @@ public class Crossword {
 
         //we are going to go through all the words in the crossword
         for (int i = 0; i < lengthOfCrossword; i++) {
+
             //so we don't have to keep calling this function
             Word word = getCrosswordList().get(i);
 
@@ -112,18 +98,26 @@ public class Crossword {
             //assign the col for this word
             int col = word.getCol();
 
+            int lengthOfAnswer = word.getNumberOfLettersInAnswer();
+
             //check to see if this is a word that goes across or down.
             if (word.getIsDown()) {
+
                 //start at the parent row and goes down to the end
-                for (int r = row; r < word.getNumberOfLettersInAnswer() + row; r++) {
+                for (int r = row; r < lengthOfAnswer + row; r++) {
+
                     //collumn stays the same while the row goes down
                     validInput[r][col] = true;
+
                 }
             } else {
+
                 //start at the parent col and goes across to the end
-                for (int c = col; c < word.getNumberOfLettersInAnswer() + col; c++) {
+                for (int c = col; c < lengthOfAnswer + col; c++) {
+
                     //collumn stays the same while the collumn goes down
                     validInput[row][c] = true;
+
                 }
             }
         }
@@ -136,36 +130,42 @@ public class Crossword {
 
         //so we don't keep calling this function
         int size = getCrosswordList().size();
+
         //we are going to go through all the words in the crossword
         for (int i = 0; i < size; i++) {
+
             //so we don't have to keep calling this function
             Word word = getCrosswordList().get(i);
 
-            //assign the row for this word
             int row = word.getRow();
-            //assign the col for this word
             int col = word.getCol();
             // create a variable so that we can loop through the word
             int count = 0;
+
+            String answer = word.getAnswer();
+            int wordLength = word.getNumberOfLettersInAnswer();
+
             //check to see if this is a word that goes across or down.
             if (word.getIsDown()) {
                 //start at the parent row and goes down to the end
 
-                //optimization
-                int wordLength = word.getNumberOfLettersInAnswer()+row;
-                for (int r = row; r < wordLength; r++) {
+                for (int r = row; r < wordLength + row; r++) {
+
                     //collumn stays the same while the row goes down
-                    validAnswer[r][col] = Character.toUpperCase(word.getLetter(count).charAt(0)); //word.getLetter(count);
+                    validAnswer[r][col] = answer.charAt(count);
                     count++;
 
                 }
+
             } else {
-                int wordLength = word.getNumberOfLettersInAnswer()+col;
+
                 //start at the parent col and goes across to the end
-                for (int c = col; c < wordLength; c++) {
+                for (int c = col; c < wordLength + col; c++) {
+
                     //collumn stays the same while the collumn goes down
-                    validAnswer[row][c] = Character.toUpperCase(word.getLetter(count).charAt(0));
+                    validAnswer[row][c] = answer.charAt(count);//word.getLetter(count).charAt(0));
                     count++;
+
                 }
             }
         }

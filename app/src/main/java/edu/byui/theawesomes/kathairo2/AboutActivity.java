@@ -18,7 +18,7 @@ public class AboutActivity extends AppCompatActivity {
 
     /****************************************************
      * This sets changes the activity to the Main menu
-     * @param v
+     * @param v View
      *****************************************************/
     public void mainMenuOnClick(View v){
         Intent intent = new Intent(this, MainScreen.class);
