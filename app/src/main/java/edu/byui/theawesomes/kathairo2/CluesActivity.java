@@ -29,26 +29,6 @@ public class CluesActivity extends AppCompatActivity {
     }
 
     /****************************************************
-     * This sets changes the activity to the Crossword
-     *
-     * @param v View
-     *****************************************************/
-    public void newGameOnClick(View v) {
-        Intent intent = new Intent(this, CrosswordActivity.class);
-        startActivity(intent);
-    }
-
-    /****************************************************
-     * This sets changes the activity to the Main menu
-     *
-     * @param v View
-     *****************************************************/
-    public void mainMenuOnClick(View v) {
-        Intent intent = new Intent(this, MainScreen.class);
-        startActivity(intent);
-    }
-
-    /****************************************************
      * This displays the crossword clues on the screen
      *
      * @param crosswordWord Crossword
