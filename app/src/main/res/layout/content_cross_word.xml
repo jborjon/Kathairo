@@ -3959,4 +3959,12 @@
             android:layout_height="wrap_content"
             android:textSize="30dp" />
 
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mute"
+        android:id="@+id/switch1"
+        android:layout_alignLeft="@+id/button"
+        android:onClick="setMusic" />
+
 </RelativeLayout>
