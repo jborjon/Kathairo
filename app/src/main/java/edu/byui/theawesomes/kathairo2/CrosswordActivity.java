@@ -53,7 +53,7 @@ public class CrosswordActivity extends AppCompatActivity {
         setCrosswordTextBoxes();
 
         // Start the timer
-            timer.start();
+        timer.start();
 
         //Set the Crossword numbering (in progess)
         TextView blah = (TextView) findViewById(R.id.number1);
@@ -82,19 +82,19 @@ public class CrosswordActivity extends AppCompatActivity {
         }
     }
 
-   @Override
+    @Override
     protected void onPause() {
         super.onPause();
-       if(isMusicOn) {
-           bkgrmsc.pause();
-       }
-   }
+        if(isMusicOn) {
+            bkgrmsc.pause();
+        }
+    }
 
 
     @Override
     protected void onResume() {
         super.onResume();
-       // bkgrmsc.seekTo(10);
+        // bkgrmsc.seekTo(10);
         if(isMusicOn) {
             bkgrmsc.start();
         }
